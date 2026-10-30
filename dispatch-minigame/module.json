@@ -1,0 +1,31 @@
+{
+  "id": "dispatch-minigame",
+  "title": "Dispatch: Hero Missions Minigame",
+  "description": "A Dispatch-style minigame for D&D 5e. Send your roster of heroes on missions, balance stats against requirements, and wait for them to return.",
+  "version": "1.2.17",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
+  "socket": true,
+  "esmodules": [
+    "scripts/dispatch.js"
+  ],
+  "styles": [
+    "styles/dispatch.css"
+  ],
+  "authors": [
+    {
+      "name": "Woodpecker"
+    }
+  ],
+  "author": "Woodpecker"
+}

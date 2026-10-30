@@ -1,0 +1,477 @@
+[
+  {
+    "id": "thorin",
+    "name": "Thorin Ironvow",
+    "class": "Fighter",
+    "level": 1,
+    "img": "icons/svg/sword.svg",
+    "stats": {
+      "strength": 9,
+      "agility": 4,
+      "constitution": 8,
+      "intelligence": 1,
+      "wisdom": 3,
+      "charisma": 3
+    },
+    "quirk": "Refuses to retreat.",
+    "recruited": true,
+    "recruitable": false,
+    "proficiency": "Athletics"
+  },
+  {
+    "id": "lyra",
+    "name": "Lyra Quickstep",
+    "class": "Rogue",
+    "level": 1,
+    "img": "icons/svg/mystery-man.svg",
+    "stats": {
+      "strength": 3,
+      "agility": 9,
+      "constitution": 4,
+      "intelligence": 3,
+      "wisdom": 4,
+      "charisma": 6
+    },
+    "quirk": "Always pockets something.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Stealth"
+  },
+  {
+    "id": "miriel",
+    "name": "Miriel Dawnscribe",
+    "class": "Wizard",
+    "level": 1,
+    "img": "icons/svg/book.svg",
+    "stats": {
+      "strength": 1,
+      "agility": 3,
+      "constitution": 3,
+      "intelligence": 10,
+      "wisdom": 7,
+      "charisma": 5
+    },
+    "quirk": "Narrates everything aloud.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Religion"
+  },
+  {
+    "id": "bram",
+    "name": "Brother Bram",
+    "class": "Cleric",
+    "level": 1,
+    "img": "icons/svg/holy-shield.svg",
+    "stats": {
+      "strength": 5,
+      "agility": 3,
+      "constitution": 7,
+      "intelligence": 6,
+      "wisdom": 8,
+      "charisma": 7
+    },
+    "quirk": "Heals the enemy, too.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Survival"
+  },
+  {
+    "id": "sable",
+    "name": "Sable Whisperwind",
+    "class": "Ranger",
+    "level": 1,
+    "img": "icons/svg/target.svg",
+    "stats": {
+      "strength": 5,
+      "agility": 8,
+      "constitution": 6,
+      "intelligence": 2,
+      "wisdom": 7,
+      "charisma": 3
+    },
+    "quirk": "Distrusts roofs.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Sleight of Hand"
+  },
+  {
+    "id": "vex",
+    "name": "Vex Goldtongue",
+    "class": "Bard",
+    "level": 1,
+    "img": "icons/svg/aura.svg",
+    "stats": {
+      "strength": 2,
+      "agility": 5,
+      "constitution": 3,
+      "intelligence": 5,
+      "wisdom": 4,
+      "charisma": 10
+    },
+    "quirk": "Owes money in every town.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Deception"
+  },
+  {
+    "id": "brannoch",
+    "name": "Brannoch Stonefist",
+    "class": "Barbarian",
+    "level": 1,
+    "img": "icons/svg/sword.svg",
+    "stats": {
+      "strength": 9,
+      "agility": 3,
+      "constitution": 8,
+      "intelligence": 5,
+      "wisdom": 4,
+      "charisma": 5
+    },
+    "quirk": "Laughs loudest when hurt.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Athletics"
+  },
+  {
+    "id": "elowen",
+    "name": "Elowen Brightleaf",
+    "class": "Druid",
+    "level": 1,
+    "img": "icons/svg/tree.svg",
+    "stats": {
+      "strength": 3,
+      "agility": 5,
+      "constitution": 6,
+      "intelligence": 3,
+      "wisdom": 9,
+      "charisma": 5
+    },
+    "quirk": "Talks to every stray cat.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Insight"
+  },
+  {
+    "id": "kaelen",
+    "name": "Kaelen Duskblade",
+    "class": "Rogue",
+    "level": 1,
+    "img": "icons/svg/mystery-man.svg",
+    "stats": {
+      "strength": 4,
+      "agility": 9,
+      "constitution": 5,
+      "intelligence": 4,
+      "wisdom": 3,
+      "charisma": 6
+    },
+    "quirk": "Never uses the front door.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Acrobatics"
+  },
+  {
+    "id": "mara",
+    "name": "Mara Quillscribe",
+    "class": "Wizard",
+    "level": 1,
+    "img": "icons/svg/book.svg",
+    "stats": {
+      "strength": 2,
+      "agility": 4,
+      "constitution": 3,
+      "intelligence": 9,
+      "wisdom": 8,
+      "charisma": 4
+    },
+    "quirk": "Annotates her own spellbook.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Nature"
+  },
+  {
+    "id": "torvald",
+    "name": "Torvald Ashbringer",
+    "class": "Paladin",
+    "level": 1,
+    "img": "icons/svg/holy-shield.svg",
+    "stats": {
+      "strength": 9,
+      "agility": 4,
+      "constitution": 4,
+      "intelligence": 2,
+      "wisdom": 4,
+      "charisma": 7
+    },
+    "quirk": "Swears oaths over breakfast.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Athletics"
+  },
+  {
+    "id": "sylvaine",
+    "name": "Sylvaine Moonwhisper",
+    "class": "Ranger",
+    "level": 1,
+    "img": "icons/svg/target.svg",
+    "stats": {
+      "strength": 5,
+      "agility": 9,
+      "constitution": 2,
+      "intelligence": 5,
+      "wisdom": 7,
+      "charisma": 4
+    },
+    "quirk": "Sleeps in trees, on principle.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Sleight of Hand"
+  },
+  {
+    "id": "ozric",
+    "name": "Ozric Pennywhistle",
+    "class": "Bard",
+    "level": 1,
+    "img": "icons/svg/aura.svg",
+    "stats": {
+      "strength": 4,
+      "agility": 6,
+      "constitution": 4,
+      "intelligence": 3,
+      "wisdom": 5,
+      "charisma": 9
+    },
+    "quirk": "Rhymes when nervous.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Intimidation"
+  },
+  {
+    "id": "dagna",
+    "name": "Dagna Ironbraids",
+    "class": "Cleric",
+    "level": 1,
+    "img": "icons/svg/holy-shield.svg",
+    "stats": {
+      "strength": 2,
+      "agility": 5,
+      "constitution": 9,
+      "intelligence": 5,
+      "wisdom": 7,
+      "charisma": 5
+    },
+    "quirk": "Blesses the food, then the cook.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Constitution"
+  },
+  {
+    "id": "zephyr",
+    "name": "Zephyr Nightwind",
+    "class": "Sorcerer",
+    "level": 1,
+    "img": "icons/svg/lightning.svg",
+    "stats": {
+      "strength": 4,
+      "agility": 4,
+      "constitution": 8,
+      "intelligence": 3,
+      "wisdom": 4,
+      "charisma": 9
+    },
+    "quirk": "Hair crackles during thunderstorms.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Intimidation"
+  },
+  {
+    "id": "grimble",
+    "name": "Grimble Thistledown",
+    "class": "Warlock",
+    "level": 1,
+    "img": "icons/svg/skull.svg",
+    "stats": {
+      "strength": 3,
+      "agility": 3,
+      "constitution": 3,
+      "intelligence": 6,
+      "wisdom": 4,
+      "charisma": 9
+    },
+    "quirk": "Argues with his patron.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Persuasion"
+  },
+  {
+    "id": "isolde",
+    "name": "Isolde Frostmantle",
+    "class": "Fighter",
+    "level": 1,
+    "img": "icons/svg/shield.svg",
+    "stats": {
+      "strength": 9,
+      "agility": 3,
+      "constitution": 7,
+      "intelligence": 5,
+      "wisdom": 2,
+      "charisma": 3
+    },
+    "quirk": "Polishes her shield nightly.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Athletics"
+  },
+  {
+    "id": "finnian",
+    "name": "Finnian Swiftfoot",
+    "class": "Monk",
+    "level": 1,
+    "img": "icons/svg/daze.svg",
+    "stats": {
+      "strength": 2,
+      "agility": 9,
+      "constitution": 2,
+      "intelligence": 2,
+      "wisdom": 7,
+      "charisma": 2
+    },
+    "quirk": "Meditates upside down.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Sleight of Hand"
+  },
+  {
+    "id": "hesper",
+    "name": "Hesper Voss",
+    "class": "Wizard",
+    "level": 1,
+    "img": "icons/svg/book.svg",
+    "stats": {
+      "strength": 5,
+      "agility": 7,
+      "constitution": 5,
+      "intelligence": 9,
+      "wisdom": 3,
+      "charisma": 4
+    },
+    "quirk": "Collects odd keys.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Arcana"
+  },
+  {
+    "id": "rurik",
+    "name": "Rurik Oakenshield",
+    "class": "Cleric",
+    "level": 1,
+    "img": "icons/svg/holy-shield.svg",
+    "stats": {
+      "strength": 8,
+      "agility": 5,
+      "constitution": 2,
+      "intelligence": 2,
+      "wisdom": 9,
+      "charisma": 3
+    },
+    "quirk": "Carries a spare holy symbol.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Insight"
+  },
+  {
+    "id": "talia",
+    "name": "Talia Emberheart",
+    "class": "Sorcerer",
+    "level": 1,
+    "img": "icons/svg/fire.svg",
+    "stats": {
+      "strength": 2,
+      "agility": 4,
+      "constitution": 6,
+      "intelligence": 4,
+      "wisdom": 2,
+      "charisma": 9
+    },
+    "quirk": "Warms her hands on her own fire.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Deception"
+  },
+  {
+    "id": "bartholomew",
+    "name": "Bartholomew Crook",
+    "class": "Rogue",
+    "level": 1,
+    "img": "icons/svg/mystery-man.svg",
+    "stats": {
+      "strength": 4,
+      "agility": 9,
+      "constitution": 5,
+      "intelligence": 7,
+      "wisdom": 2,
+      "charisma": 2
+    },
+    "quirk": "Always has a plan B and C.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Stealth"
+  },
+  {
+    "id": "nyssa",
+    "name": "Nyssa Wavecaller",
+    "class": "Druid",
+    "level": 1,
+    "img": "icons/svg/water.svg",
+    "stats": {
+      "strength": 2,
+      "agility": 6,
+      "constitution": 2,
+      "intelligence": 4,
+      "wisdom": 9,
+      "charisma": 5
+    },
+    "quirk": "Smells like the sea.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Insight"
+  },
+  {
+    "id": "magnus",
+    "name": "Magnus Redhammer",
+    "class": "Fighter",
+    "level": 1,
+    "img": "icons/svg/sword.svg",
+    "stats": {
+      "strength": 9,
+      "agility": 4,
+      "constitution": 6,
+      "intelligence": 3,
+      "wisdom": 5,
+      "charisma": 3
+    },
+    "quirk": "Names every weapon he owns.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Athletics"
+  },
+  {
+    "id": "yara",
+    "name": "Yara Nightshade",
+    "class": "Warlock",
+    "level": 1,
+    "img": "icons/svg/skull.svg",
+    "stats": {
+      "strength": 2,
+      "agility": 2,
+      "constitution": 4,
+      "intelligence": 9,
+      "wisdom": 5,
+      "charisma": 6
+    },
+    "quirk": "Whispers to her shadow.",
+    "recruited": false,
+    "recruitable": false,
+    "proficiency": "Investigation"
+  }
+]

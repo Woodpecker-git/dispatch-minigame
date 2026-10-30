@@ -1,0 +1,95 @@
+<div class="board {{#if background}}with-bg{{/if}}">
+  <main class="notices">
+    {{#each missions}}
+    <article class="parchment {{#if busy}}away{{/if}}" {{#unless busy}}data-drop="mission"{{/unless}} data-mission="{{id}}" style="{{style}}">
+      <img class="nail" src="{{@root.asset}}nail{{nail.img}}.png" style="{{nail.style}}" alt="" draggable="false">
+      <h3>{{name}}</h3>
+      <p class="subtitle">{{subtitle}}</p>
+      <p class="stars" data-tooltip="Tier {{tier}}">{{stars}}</p>
+      <p class="desc">{{description}}</p>
+      <div class="spacer"></div>
+
+      {{#if @root.isGM}}
+      <div class="reqs">{{#each reqs}}<span class="{{#if met}}met{{/if}}">{{abbr}} {{have}}/{{need}}</span>{{/each}}</div>
+      {{#if hidden}}<div class="hidden-skill {{#if hiddenHit}}hit{{/if}}">Hidden skill: {{hidden}}{{#if hiddenHit}} &#10003; advantage{{/if}}</div>{{/if}}
+      {{/if}}
+
+      {{#if totals}}<div class="totals" data-tooltip="Combined stats of the party on this notice">{{#each totals}}<span>{{abbr}} <b>{{val}}</b></span>{{/each}}</div>{{/if}}
+
+      <div class="slots">
+        {{#each party}}
+        <div class="slot filled" draggable="{{#if ../busy}}false{{else}}true{{/if}}" data-hero="{{id}}" {{#unless ../busy}}data-action="unassign"{{/unless}} data-tooltip="{{name}}">
+          <img src="{{img}}" alt="" draggable="false" onerror="this.onerror=null;this.src='icons/svg/mystery-man.svg'">
+        </div>
+        {{/each}}
+        {{#each empty}}<div class="slot empty">+</div>{{/each}}
+      </div>
+
+      {{#if odds}}<div class="odds {{odds.cls}}">{{odds.label}}</div>{{/if}}
+
+      {{#if @root.isGM}}
+      <div class="actions">
+        {{#if busy}}
+          <button type="button" data-action="resolveNow" data-index="{{away.index}}">Resolve Now</button>
+        {{else}}
+          <span class="chance {{chanceClass}}">{{chance}}%</span>
+          <button type="button" data-action="send" data-mission="{{id}}" data-tooltip="Up to {{slots}} heroes (more heroes, better odds)" {{#unless canSend}}disabled{{/unless}}>Send Party</button>
+        {{/if}}
+      </div>
+      {{/if}}
+
+      {{#unless @root.isGM}}{{#unless busy}}
+      <div class="actions">
+        <button type="button" data-action="deploy" data-mission="{{id}}" data-tooltip="Up to {{slots}} heroes (more heroes, better odds)" {{#unless canDeploy}}disabled{{/unless}}>Deploy</button>
+      </div>
+      {{/unless}}{{/unless}}
+
+      <footer>{{#if busy}}Away · returns in {{away.hoursLeft}}h{{else}}{{rewards.gold}} gp · {{rewards.xp}} XP{{/if}}</footer>
+
+      {{#if busy}}<img class="seal" src="{{@root.asset}}seal.png" style="{{away.sealStyle}}" alt="" draggable="false">{{/if}}
+    </article>
+    {{/each}}
+  </main>
+
+  <aside class="roster" data-drop="roster">
+    {{#each heroes}}
+    <div class="hero-card {{status}}" draggable="{{available}}" data-hero="{{id}}" data-pending="{{pending}}" data-tooltip="{{#if pending}}Level up! {{pending}} stat points to spend{{else}}{{statusLabel}}{{/if}}" style="{{look}}">
+      {{#if pending}}<span class="levelup-badge"><i class="fa-solid fa-arrow-up"></i></span>{{/if}}
+      {{#if @root.isGM}}<button type="button" class="card-levelup" data-action="levelUpHero" data-hero="{{id}}" data-tooltip="Level up {{name}}"><i class="fa-solid fa-arrow-up"></i></button>{{/if}}
+      <img class="portrait" src="{{img}}" alt="" draggable="false" onerror="this.onerror=null;this.src='icons/svg/mystery-man.svg'">
+      <h4>{{name}}</h4>
+      <p class="cls">Lv {{level}} {{class}}</p>
+      {{#if ribbon}}<span class="status-ribbon {{status}}">{{ribbon}}</span>{{/if}}
+    </div>
+    {{/each}}
+  </aside>
+
+  <aside class="recruits">
+    <img class="nail" src="{{asset}}nail1.png" style="left:50%;top:-.5cqw;--ns:1;--nf:1;--nr:0deg" alt="" draggable="false">
+    <h3>Recruits</h3>
+    <p class="count">{{recruitedCount}} of {{maxRecruits}} recruited</p>
+    <ul>
+      {{#each recruits}}
+      <li class="{{#unless recruitable}}off{{/unless}}">
+        <button type="button" class="name" data-action="openRecruit" data-hero="{{id}}">{{name}}</button>
+        {{#if @root.isGM}}<button type="button" class="eye" data-action="toggleRecruitable" data-hero="{{id}}" data-tooltip="{{#if recruitable}}Available to recruit (click to hide){{else}}Hidden from players (click to offer){{/if}}"><i class="fa-solid {{#if recruitable}}fa-eye{{else}}fa-eye-slash{{/if}}"></i></button>{{/if}}
+      </li>
+      {{else}}
+      <li class="none">No one is looking for work.</li>
+      {{/each}}
+    </ul>
+  </aside>
+
+  {{#if isGM}}
+  <button type="button" class="gm-levelall" data-action="levelUpEveryone"><i class="fa-solid fa-angles-up"></i> Level up all</button>
+  <div class="gm-toolbar">
+    <span>{{treasury.gold}} gp</span>
+    <button type="button" data-action="lockLayout"><i class="fa-solid {{#if locked}}fa-lock-open{{else}}fa-lock{{/if}}"></i> {{#if locked}}Unlock{{else}}Lock to scene{{/if}}</button>
+    <button type="button" data-action="addRecruits" data-tooltip="Make some random heroes available to recruit"><i class="fa-solid fa-user-plus"></i> Add recruits</button>
+    <button type="button" data-action="refreshNotices" data-tooltip="Take down the posted notices and pin a fresh random set"><i class="fa-solid fa-arrows-rotate"></i> Refresh notices</button>
+    <button type="button" data-action="restoreNotices" data-tooltip="Make completed missions available to the board again"><i class="fa-solid fa-rotate-left"></i> Restore notices</button>
+    <button type="button" data-action="openSettings"><i class="fa-solid fa-gear"></i> Settings</button>
+    <button type="button" data-action="bindScene"><i class="fa-solid fa-thumbtack"></i> {{#if scene.boundHere}}Unbind scene{{else}}Open on this scene{{/if}}</button>
+  </div>
+  {{/if}}
+</div>

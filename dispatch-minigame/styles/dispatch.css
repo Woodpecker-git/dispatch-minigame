@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap");
+
+/* ---------- Window: frameless, transparent, behind other windows ---------- */
+.application.dispatch,
+.application.dispatch .window-content {
+  --background: transparent;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  backdrop-filter: none !important;
+}
+.application.dispatch { pointer-events: none; z-index: 2 !important; }
+.application.dispatch .window-header { pointer-events: auto; background: transparent !important; border: none !important; box-shadow: none !important; color: #fff; text-shadow: 0 0 4px #000, 0 0 2px #000; }
+.application.dispatch .window-header .window-title,
+.application.dispatch .window-header button { text-shadow: 0 0 4px #000, 0 0 2px #000; }
+.application.dispatch.locked .window-header,
+.application.dispatch.locked .window-resize-handle { display: none; }
+.application.dispatch .window-resize-handle { pointer-events: auto; z-index: 10; color: #fff; text-shadow: 0 0 4px #000, 0 0 2px #000; }
+.dispatch .window-content { padding: 0; overflow: visible; pointer-events: none; container-type: size; }
+
+/* ---------- The board: everything is sized in cqw so it scales with the notice board image ---------- */
+.dispatch .board {
+  --nw: 13cqw; /* parchment width (keep in sync with NOTICE_W in dispatch.js) */
+  container-type: inline-size; position: relative; pointer-events: none; /* only notices, cards and buttons catch clicks */
+  width: min(100cqw, calc(100cqh * 1718 / 1400)); aspect-ratio: 1718 / 1400; margin: 0 auto;
+  font-family: "IM Fell English", "Palatino Linotype", Palatino, Georgia, serif;
+  user-select: none;
+}
+.dispatch .notices { position: absolute; inset: 0; pointer-events: none; }
+
+/* ---------- Parchment notices ---------- */
+.dispatch .parchment {
+  --ink: #2a1c0c; --pw: calc(var(--nw) * var(--s)); --u: calc(var(--pw) / 18); /* 1u = 1cqw at the original notice size */ /* own width: % padding would use the board's width instead */
+  position: absolute; left: var(--left); top: var(--top);
+  width: var(--pw); aspect-ratio: 449 / 600; box-sizing: border-box;
+  padding: calc(var(--pw) * .15) calc(var(--pw) * .12) calc(var(--pw) * .11); display: flex; flex-direction: column; align-items: stretch;
+  transform: rotate(var(--rot)); transition: transform .15s; pointer-events: auto; color: var(--ink);
+}
+.dispatch .parchment::before { /* flipped background so text never mirrors */
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: url("../assets/parchment.png") center / 100% 100% no-repeat;
+  transform: scale(var(--fx), var(--fy)); filter: drop-shadow(.25cqw .5cqw .5cqw #000a);
+}
+.dispatch .parchment.dragover { transform: rotate(var(--rot)) scale(1.04); }
+.dispatch .parchment.away::before { filter: sepia(.35) brightness(.92) drop-shadow(calc(.25 * var(--u)) calc(.5 * var(--u)) calc(.5 * var(--u)) #000a); }
+.dispatch .parchment h3 { margin: 0; text-align: center; font-family: "IM Fell English SC", "IM Fell English", Georgia, serif; font-size: calc(1.5 * var(--u)); line-height: 1.08; font-weight: normal; color: #000; border: none; text-shadow: none; }
+.dispatch .parchment .subtitle { margin: calc(.15 * var(--u)) 0 0; text-align: center; font-size: calc(.92 * var(--u)); font-style: italic; opacity: .85; }
+.dispatch .parchment .desc { margin: calc(.45 * var(--u)) 0 0; text-align: center; font-size: calc(.88 * var(--u)); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.dispatch .parchment .spacer { flex: 1; }
+.dispatch .parchment .reqs { display: flex; flex-wrap: wrap; gap: calc(.25 * var(--u)); justify-content: center; margin-bottom: calc(.3 * var(--u)); }
+.dispatch .parchment .reqs span { font-size: calc(.68 * var(--u)); padding: 0 calc(.35 * var(--u)); border: 1px solid #7a1f1f; border-radius: 2px; color: #7a1f1f; }
+.dispatch .parchment .reqs span.met { border-color: #2f5a1f; color: #2f5a1f; }
+.dispatch .parchment .slots { display: flex; gap: calc(.3 * var(--u)); justify-content: center; }
+.dispatch .parchment .slot { width: calc(3 * var(--u)); height: calc(3 * var(--u)); box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-radius: 3px; }
+.dispatch .parchment .slot.empty { border: 2px dashed #7a5a2a; color: #7a5a2a; font-size: calc(1.3 * var(--u)); }
+.dispatch .parchment .slot.filled { background: #5a3d1a22; border: 1px solid #6b4a22; cursor: grab; overflow: hidden; }
+.dispatch .parchment .slot.filled img { width: 100%; height: 100%; object-fit: cover; border: none; }
+.dispatch .parchment .actions { display: flex; align-items: center; justify-content: center; gap: calc(.5 * var(--u)); margin-top: calc(.3 * var(--u)); }
+.dispatch .parchment .chance { font-family: "IM Fell English SC", serif; font-size: calc(1.3 * var(--u)); font-weight: bold; }
+.dispatch .parchment .chance.good { color: #2a6a2a; } .dispatch .parchment .chance.mid { color: #a87000; } .dispatch .parchment .chance.bad { color: #a33; }
+.dispatch .parchment button { width: auto; margin: 0; padding: 0 calc(.6 * var(--u)); height: auto; min-height: 0; line-height: 1.5; font-size: calc(.75 * var(--u)); font-family: "IM Fell English SC", serif; background: #5a3d1acc; color: #f3e4bd; border: 1px solid #3a2410; }
+.dispatch .parchment footer { margin-top: calc(.3 * var(--u)); padding-top: calc(.15 * var(--u)); text-align: center; font-size: calc(.8 * var(--u)); border-top: 1px dashed #7a5a2a; }
+
+/* Nails (images vary by flip, tilt and size; scaled relative to the notice) */
+.dispatch .nail { position: absolute; width: calc(8.5% * var(--ns)); height: auto; z-index: 3; pointer-events: none;
+  transform: translateX(-50%) rotate(var(--nr)) scaleX(var(--nf)); filter: drop-shadow(.15cqw .3cqw .25cqw #000b); }
+
+/* Wax seal shown while a team is out */
+.dispatch .seal { position: absolute; width: 30%; height: auto; z-index: 4; pointer-events: none; filter: drop-shadow(.1cqw .2cqw .2cqw #0008); }
+
+/* ---------- Hero cards along the bottom ---------- */
+.dispatch .roster { position: absolute; left: 13cqw; right: 13cqw; top: 58.6cqw; height: 9.2cqw; display: flex; justify-content: center; align-items: center; gap: 1.2cqw; pointer-events: none; }
+.dispatch.dragging .roster { pointer-events: auto; outline: 2px dashed #f0dca8; outline-offset: -2px; border-radius: 8px; background: #f0dca81f; }
+.dispatch .hero-card {
+  --cw: 5.6cqw; /* hero card width */
+  flex: 0 0 auto; width: var(--cw); aspect-ratio: 193 / 290; box-sizing: border-box; padding: calc(var(--cw) * .12) calc(var(--cw) * .13) calc(var(--cw) * .1);
+  display: flex; flex-direction: column; align-items: center; text-align: center; color: #2a1c0c; cursor: pointer; pointer-events: auto;
+  background: url("../assets/blank_card.png") center / 100% 100% no-repeat;
+  transform: translate(var(--dx), var(--dy)) rotate(var(--rot)); transition: transform .12s;
+  filter: drop-shadow(.15cqw .3cqw .35cqw #000c);
+}
+.dispatch .hero-card:hover { transform: translate(var(--dx), calc(var(--dy) - .6cqw)) rotate(var(--rot)); }
+.dispatch .hero-card[draggable="false"] { filter: grayscale(.6) sepia(.4) brightness(.85) drop-shadow(.15cqw .3cqw .35cqw #000c); }
+.dispatch .hero-card .portrait { width: 62%; aspect-ratio: 1; object-fit: cover; border: 1px solid #6b4a22; border-radius: 2px; background: #5a3d1a26; }
+.dispatch .hero-card h4 { margin: .25cqw 0 0; font-family: "IM Fell English SC", "IM Fell English", serif; font-size: .78cqw; line-height: 1.05; font-weight: normal; color: #000; border: none; }
+.dispatch .hero-card .cls { margin: .1cqw 0 0; font-size: .65cqw; font-style: italic; }
+
+/* ---------- GM toolbar (top-right frame of the board) ---------- */
+.dispatch .gm-toolbar { position: absolute; left: 50%; transform: translateX(-50%); bottom: .8cqw; z-index: 50; display: flex; align-items: center; gap: .5cqw; padding: .2cqw .8cqw; border-radius: 1cqw; background: #1f150dd9; color: #e8d9b8; font-size: max(10px, .75cqw); white-space: nowrap; pointer-events: auto; }
+.dispatch .gm-toolbar button { width: auto; margin: 0; padding: 0 .6cqw; line-height: 1.6; font-size: inherit; }
+
+/* ---------- Hero popup: a larger blank card (lives on <body>) ---------- */
+.dispatch-popup { position: fixed; z-index: 10000; width: 260px; height: 390px; box-sizing: border-box; padding: 46px 40px 36px; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center; text-align: center; pointer-events: none; color: #2a1c0c;
+  font-family: "IM Fell English", "Palatino Linotype", Georgia, serif;
+  background: url("../assets/blank_card.png") center / 100% 100% no-repeat; filter: drop-shadow(4px 7px 8px #000d); }
+.dispatch-popup img { width: 72px; height: 72px; object-fit: cover; border: 1px solid #6b4a22; border-radius: 3px; background: #5a3d1a26; }
+.dispatch-popup h4 { margin: 6px 0 0; font-family: "IM Fell English SC", "IM Fell English", serif; font-size: 21px; line-height: 1.05; font-weight: normal; color: #000; border: none; }
+.dispatch-popup .cls { margin: 2px 0 0; font-size: 15px; font-style: italic; }
+.dispatch-popup .quirk { margin: 4px 0 6px; font-size: 13px; line-height: 1.15; font-style: italic; opacity: .85; }
+.dispatch-popup ul { list-style: none; margin: auto 0 0; padding: 0; width: 100%; font-size: 14px; line-height: 1.4; }
+.dispatch-popup li { display: flex; justify-content: space-between; border-bottom: 1px dotted #7a5a2a88; text-transform: capitalize; }
+.dispatch-popup em { margin-top: 6px; font-size: 13px; color: #6b1d1d; }
+
+.dispatch-chat h3 { margin: 0 0 4px; }
+/* Scene-anchored board may be larger or smaller than the viewport while zooming. */
+.application.dispatch.locked { max-width: none !important; max-height: none !important; min-width: 0 !important; min-height: 0 !important; }
+
+/* Odds wording shown to everyone */
+.dispatch .parchment .odds { margin-top: calc(.3 * var(--u)); text-align: center; font-family: "IM Fell English SC", "IM Fell English", serif; font-size: calc(1.15 * var(--u)); letter-spacing: .04em; }
+.dispatch .parchment .odds.suicidal { color: #8a1c1c; }
+.dispatch .parchment .odds.dicey { color: #b3541c; }
+.dispatch .parchment .odds.coin { color: #8a6500; }
+.dispatch .parchment .odds.promising { color: #4a7a1f; }
+.dispatch .parchment .odds.assured { color: #1f6a2a; }
+
+/* ---------- GM settings window (uses Foundry's normal window styling) ---------- */
+.dispatch-settings-app .window-content { padding: 8px 14px 12px; overflow-y: auto; }
+.dispatch-settings-app h2 { margin: 14px 0 4px; font-size: 1.15em; border-bottom: 1px solid var(--color-border-light-tertiary, #8886); }
+.dispatch-settings-app .notes { margin: 2px 0 6px; opacity: .8; font-size: .9em; }
+.dispatch-settings-app .tier-row { display: flex; gap: 18px; flex-wrap: wrap; }
+.dispatch-settings-app .tier { display: flex; align-items: center; gap: 6px; }
+.dispatch-settings-app .hero-table { width: 100%; border-collapse: collapse; }
+.dispatch-settings-app .hero-table th { font-size: .8em; text-align: center; }
+.dispatch-settings-app .hero-table td { padding: 2px 3px; text-align: center; }
+.dispatch-settings-app .hero-table td:first-child { text-align: left; }
+.dispatch-settings-app .hero-table input[type="number"] { width: 3.2em; text-align: center; }
+.dispatch-settings-app .button-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 6px; }
+.dispatch-settings-app .button-row button { width: auto; }
+.dispatch-settings-app button.danger { border-color: #a33; color: #c44; }
+.dispatch-settings-app .file-link { margin-left: 4px; }
+.dispatch-settings-app .settings-footer { margin-top: 14px; display: flex; justify-content: flex-end; }
+.dispatch-settings-app .settings-footer button { width: auto; }
+
+/* ---------- Level-up badge on hero cards ---------- */
+.dispatch .hero-card { position: relative; }
+.dispatch .levelup-badge { position: absolute; top: -.5cqw; right: -.5cqw; width: 1.9cqw; height: 1.9cqw; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: .95cqw; color: #4a2b00; background: radial-gradient(circle at 35% 30%, #fff1a6, #e0a416 70%); border: 1px solid #7a4a00; z-index: 5;
+  box-shadow: 0 0 .8cqw #ffd45a, .1cqw .2cqw .3cqw #000a; animation: dispatch-pulse 1.4s ease-in-out infinite; }
+@keyframes dispatch-pulse { 50% { transform: scale(1.18); box-shadow: 0 0 1.3cqw #ffe27a, .1cqw .2cqw .3cqw #000a; } }
+
+/* ---------- Level-up card: centred, bigger blank card with stat buttons ---------- */
+.dispatch-levelup-backdrop { position: fixed; inset: 0; z-index: 9999; background: #0006; }
+.dispatch-levelup { position: fixed; z-index: 10000; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 320px; height: 481px; box-sizing: border-box; padding: 60px 48px 44px;
+  display: flex; flex-direction: column; align-items: center; text-align: center; color: #2a1c0c; font-family: "IM Fell English", "Palatino Linotype", Georgia, serif;
+  background: url("../assets/blank_card.png") center / 100% 100% no-repeat; filter: drop-shadow(5px 9px 10px #000d); }
+.dispatch-levelup img { width: 64px; height: 64px; object-fit: cover; border: 1px solid #6b4a22; border-radius: 3px; background: #5a3d1a26; }
+.dispatch-levelup h4 { margin: 6px 0 0; font-family: "IM Fell English SC", "IM Fell English", serif; font-size: 22px; line-height: 1.05; font-weight: normal; color: #000; border: none; }
+.dispatch-levelup .cls { margin: 2px 0 0; font-size: 15px; font-style: italic; }
+.dispatch-levelup .points { margin: 8px 0 4px; font-size: 15px; color: #6b1d1d; }
+.dispatch-levelup ul { list-style: none; margin: 0; padding: 0; width: 100%; font-size: 15px; }
+.dispatch-levelup li { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 1px 0; border-bottom: 1px dotted #7a5a2a88; text-transform: capitalize; }
+.dispatch-levelup li .k { flex: 1; text-align: left; }
+.dispatch-levelup li .v { min-width: 3.2em; text-align: right; }
+.dispatch-levelup .gain { color: #2a6a2a; }
+.dispatch-levelup .ctl { display: flex; gap: 3px; }
+.dispatch-levelup .ctl button, .dispatch-levelup .lu-train, .dispatch-levelup .lu-close { cursor: pointer; font-family: inherit; color: #f3e4bd; background: #5a3d1acc; border: 1px solid #3a2410; border-radius: 3px; }
+.dispatch-levelup .ctl button { width: 22px; height: 22px; padding: 0; line-height: 1; font-size: 15px; }
+.dispatch-levelup button:disabled { opacity: .35; cursor: default; }
+.dispatch-levelup .lu-train { margin-top: auto; width: 100%; height: 32px; font-family: "IM Fell English SC", serif; font-size: 18px; letter-spacing: .06em; }
+.dispatch-levelup .lu-close { position: absolute; top: 26px; right: 30px; width: 22px; height: 22px; padding: 0; font-size: 12px; }
+
+/* ---------- Board frame fit, hero card layers, ribbons, GM buttons ---------- */
+.dispatch .hero-card { background: none; filter: none; }
+.dispatch .hero-card::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: url("../assets/blank_card.png") center / 100% 100% no-repeat; filter: drop-shadow(.15cqw .3cqw .35cqw #000c); }
+.dispatch .hero-card[draggable="false"] { filter: none; }
+.dispatch .hero-card[draggable="false"]::before { filter: grayscale(.6) sepia(.4) brightness(.85) drop-shadow(.15cqw .3cqw .35cqw #000c); }
+.dispatch .status-ribbon { position: absolute; left: -6%; right: -6%; top: 22%; padding: .1cqw 0; text-align: center; transform: rotate(-9deg); z-index: 6; pointer-events: none;
+  font-family: "IM Fell English SC", "IM Fell English", serif; font-size: .78cqw; letter-spacing: .05em; color: #fff; background: #7a1f1fe6; box-shadow: 0 .1cqw .25cqw #000a; }
+.dispatch .status-ribbon.celebrating { background: #9a6b00e6; }
+.dispatch .status-ribbon.training { background: #2a4a7ae6; }
+.dispatch .card-levelup { position: absolute; top: -.5cqw; left: -.5cqw; width: 1.6cqw; height: 1.6cqw; min-height: 0; margin: 0; padding: 0; line-height: 1; z-index: 7; cursor: pointer; pointer-events: auto;
+  border-radius: 50%; font-size: .8cqw; color: #fff; background: #2a6a2a; border: 1px solid #0a2a0a; box-shadow: .1cqw .2cqw .3cqw #000a; }
+.dispatch .gm-levelall { position: absolute; right: 6cqw; bottom: 5.4cqw; z-index: 50; width: auto; min-height: 0; margin: 0; padding: .2cqw .8cqw; line-height: 1.5; font-size: max(10px, .75cqw); pointer-events: auto;
+  color: #fff; background: #2a6a2a; border: 1px solid #0a2a0a; border-radius: .6cqw; box-shadow: .1cqw .2cqw .3cqw #000a; }
+
+/* ---------- Roster, GM button and Recruits parchment positions ---------- */
+.dispatch .roster { left: 3cqw; right: 15cqw; }
+.dispatch .gm-levelall { left: 4.5cqw; right: auto; }
+
+/* Up to five heroes per notice, combined stats and the GM's hidden-skill tag */
+.dispatch .parchment .slots { flex-wrap: nowrap; gap: calc(.25 * var(--u)); }
+.dispatch .parchment .slot { width: calc(2.4 * var(--u)); height: calc(2.4 * var(--u)); }
+.dispatch .parchment .desc { -webkit-line-clamp: 3; }
+.dispatch .parchment .totals { display: grid; grid-template-columns: repeat(3, 1fr); gap: calc(.05 * var(--u)) calc(.4 * var(--u)); margin-bottom: calc(.3 * var(--u)); font-size: calc(.68 * var(--u)); text-align: center; }
+.dispatch .parchment .totals span { border-bottom: 1px dotted #7a5a2a88; white-space: nowrap; }
+.dispatch .parchment .totals b { margin-left: .15em; }
+.dispatch .parchment .hidden-skill { text-align: center; font-size: calc(.7 * var(--u)); font-style: italic; color: #5a2a7a; margin-bottom: calc(.2 * var(--u)); }
+.dispatch .parchment .hidden-skill.hit { color: #1f6a2a; font-weight: bold; }
+
+.dispatch .recruits { --rw: 11.6cqw; position: absolute; left: 86.2cqw; top: 56.6cqw; z-index: 5; width: var(--rw); aspect-ratio: 449 / 600; box-sizing: border-box;
+  padding: calc(var(--rw) * .17) calc(var(--rw) * .13) calc(var(--rw) * .1); display: flex; flex-direction: column; color: #2a1c0c; pointer-events: auto;
+  font-family: "IM Fell English", "Palatino Linotype", Palatino, Georgia, serif; transform: rotate(2.5deg); }
+.dispatch .recruits::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; transform: scaleX(-1);
+  background: url("../assets/parchment.png") center / 100% 100% no-repeat; filter: drop-shadow(.25cqw .5cqw .5cqw #000a); }
+.dispatch .recruits h3 { margin: 0; text-align: center; font-family: "IM Fell English SC", "IM Fell English", serif; font-size: 1.45cqw; font-weight: normal; color: #000; border: none; }
+.dispatch .recruits .count { margin: 0 0 .3cqw; text-align: center; font-size: .68cqw; font-style: italic; }
+.dispatch .recruits ul { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: thin; }
+.dispatch .recruits li { display: flex; align-items: center; justify-content: space-between; gap: .3cqw; font-size: .85cqw; line-height: 1.4; border-bottom: 1px dotted #7a5a2a88; }
+.dispatch .recruits li.off .name { opacity: .55; font-style: italic; }
+.dispatch .recruits li.none { justify-content: center; font-style: italic; opacity: .7; border: none; }
+.dispatch .recruits .name { width: auto; height: auto; min-height: 0; margin: 0; padding: 0; background: none; border: none; box-shadow: none; line-height: inherit; font: inherit;
+  color: #2a1c0c; text-align: left; cursor: pointer; text-decoration: underline dotted; }
+.dispatch .recruits .name:hover { color: #7a1f1f; }
+.dispatch .recruits .eye { width: auto; height: auto; min-height: 0; margin: 0; padding: 0 .2cqw; background: none; border: none; box-shadow: none; color: #5a3d1a; cursor: pointer; font-size: .75cqw; }
+
+/* Level-up and recruit cards */
+.dispatch-levelup { height: auto; min-height: 481px; }
+.dispatch-levelup .prof { margin: 2px 0 0; font-size: 13px; color: #3a2410; }
+.dispatch-levelup .quirk { margin: 4px 0 4px; font-size: 13px; line-height: 1.15; font-style: italic; opacity: .85; }
+.dispatch-recruit .lu-train { margin-top: 8px; }
+.dispatch-levelup .lu-toggle { margin-top: 6px; width: 100%; padding: 2px 4px; font-family: inherit; font-size: 12px; cursor: pointer; color: #f3e4bd; background: #5a3d1a99; border: 1px solid #3a2410; border-radius: 3px; }
+.dispatch-popup .prof { margin: 0; font-size: 12px; color: #3a2410; }
+
+/* ---------- Larger hero cards (about 1.5x) ---------- */
+.dispatch .roster { top: 58.4cqw; height: 13.8cqw; gap: .8cqw; }
+.dispatch .hero-card { --cw: 8.4cqw; flex: 0 1 var(--cw); min-width: 0; }
+.dispatch .hero-card h4 { font-size: 1.17cqw; margin-top: .35cqw; }
+.dispatch .hero-card .cls { font-size: .98cqw; }
+.dispatch .levelup-badge { width: 2.8cqw; height: 2.8cqw; font-size: 1.4cqw; top: -.7cqw; right: -.7cqw; }
+.dispatch .card-levelup { width: 2.4cqw; height: 2.4cqw; font-size: 1.2cqw; top: -.7cqw; left: -.7cqw; }
+.dispatch .status-ribbon { font-size: 1.17cqw; }
+.dispatch .gm-levelall { bottom: 1.2cqw; }
+
+/* ---------- Full stats popup: stays until a click elsewhere, with a Retire button ---------- */
+.dispatch-popup { height: 440px; pointer-events: auto; }
+.dispatch-popup .pop-retire, .dispatch-popup .pop-prof { margin-top: 6px; width: 100%; padding: 2px 4px; font-family: "IM Fell English SC", serif; font-size: 15px; letter-spacing: .05em; cursor: pointer;
+  color: #f3e4bd; background: #7a1f1fcc; border: 1px solid #3a0a0a; border-radius: 3px; }
+.dispatch-popup .pop-retire:disabled { opacity: .35; cursor: default; }
+
+/* ---------- Hero cards at 80% ---------- */
+.dispatch .roster { left: 3cqw; right: 25cqw; top: 60.6cqw; height: 11.4cqw; }
+.dispatch .hero-card { --cw: 6.7cqw; }
+.dispatch .hero-card h4 { font-size: .94cqw; }
+.dispatch .hero-card .cls { font-size: .78cqw; }
+.dispatch .levelup-badge { width: 2.24cqw; height: 2.24cqw; font-size: 1.12cqw; }
+.dispatch .card-levelup { width: 1.92cqw; height: 1.92cqw; font-size: .96cqw; }
+.dispatch .status-ribbon { font-size: .94cqw; }
+
+/* ---------- Recruits parchment at double size, bottom-right corner ---------- */
+.dispatch .recruits { --rw: 23.2cqw; left: 76.4cqw; top: 41cqw; }
+.dispatch .recruits h3 { font-size: 2.9cqw; }
+.dispatch .recruits .count { font-size: 1.36cqw; margin-bottom: .6cqw; }
+.dispatch .recruits li { font-size: 1.7cqw; gap: .6cqw; }
+.dispatch .recruits .eye { font-size: 1.5cqw; padding: 0 .4cqw; }
+.dispatch .gm-levelall { left: 3cqw; }
+
+/* Tier labels in the top corners (absolutely positioned: nothing else on the notice moves) */
+.dispatch .parchment .tier-tag { position: absolute; top: calc(var(--pw) * .075); z-index: 2; pointer-events: none; font-family: "IM Fell English SC", "IM Fell English", serif;
+  font-size: calc(.8 * var(--u)); letter-spacing: .04em; color: #5a2a14; opacity: .85; white-space: nowrap; }
+.dispatch .parchment .tier-tag.left { left: calc(var(--pw) * .1); transform: rotate(-4deg); }
+.dispatch .parchment .tier-tag.right { right: calc(var(--pw) * .1); transform: rotate(4deg); }
+.dispatch .parchment .tier-tag { font-family: serif; font-size: calc(.95 * var(--u)); letter-spacing: .05em; color: #8a5a00; text-shadow: 0 0 1px #3a2410; opacity: .95; }
+.dispatch .parchment .tier-tag { display: none; }
+.dispatch .parchment .stars { margin: calc(.2 * var(--u)) 0 0; text-align: center; line-height: 1; font-family: serif; font-size: calc(.95 * var(--u)); letter-spacing: .08em; color: #8a5a00; text-shadow: 0 0 1px #3a2410; }
+.dispatch .parchment .desc { margin-top: calc(.25 * var(--u)); }
+
+/* ---------- Recruits parchment at 60% of its previous size, top level with the hero cards ---------- */
+.dispatch .recruits { --rw: 13.9cqw; left: 85cqw; top: 61.2cqw; }
+.dispatch .recruits h3 { font-size: 1.74cqw; }
+.dispatch .recruits .count { font-size: .82cqw; margin-bottom: .36cqw; }
+.dispatch .recruits li { font-size: 1.02cqw; gap: .36cqw; }
+.dispatch .recruits .eye { font-size: .9cqw; padding: 0 .24cqw; }
+.dispatch .roster { right: 16cqw; }
+
+/* Hero card portrait covers the top half of the card */
+.dispatch .hero-card { padding-top: calc(var(--cw) * .8); }
+.dispatch .hero-card .portrait { position: absolute; top: calc(var(--cw) * .09); left: calc(var(--cw) * .1); width: calc(var(--cw) * .8); height: calc(var(--cw) * .66); aspect-ratio: auto; object-fit: cover; border-radius: 3px; }
+.dispatch .hero-card h4 { margin-top: .15cqw; }
+
+.dispatch .hero-card .portrait { background: none; border: none; }
+
+
+/* Optional wooden board background (setting); sits at the top of the board area */
+.dispatch .board.with-bg { background: url("../assets/notice_board.png") top center / 100% auto no-repeat; }
+
+.dispatch-settings-app details.hero-fold > summary { cursor: pointer; list-style: none; display: block; }
+.dispatch-settings-app details.hero-fold > summary::-webkit-details-marker { display: none; }
+.dispatch-settings-app details.hero-fold > summary h2::after { content: "\f078"; font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free"; font-weight: 900; float: right; font-size: .8em; transition: transform .15s; }
+.dispatch-settings-app details.hero-fold:not([open]) > summary h2::after { transform: rotate(90deg); }
+.dispatch-settings-app details.hero-fold > summary h2 { margin-bottom: 4px; }
+
+.dispatch-popup .pop-prof { display: block; width: 100%; margin-top: 6px; }

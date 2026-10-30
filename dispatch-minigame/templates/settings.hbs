@@ -1,0 +1,96 @@
+<section class="dispatch-settings">
+  <h2><i class="fa-solid fa-layer-group"></i> Mission tiers</h2>
+  <p class="notes">Only checked tiers appear on the board. A mission that is already out stays visible until its party returns.</p>
+  <div class="tier-row">
+    {{#each tiers}}
+    <label class="tier"><input type="checkbox" name="tier.{{tier}}" {{#if shown}}checked{{/if}}> Tier {{tier}} <small>({{count}} missions)</small></label>
+    {{/each}}
+  </div>
+
+  <h2><i class="fa-solid fa-thumbtack"></i> Notices on the board</h2>
+  <div class="button-row">
+    <label>Minimum <input type="number" name="minNotices" value="{{minNotices}}" min="0" max="10" style="width:4em"></label>
+    <label>Maximum (10 at most) <input type="number" name="maxNotices" value="{{maxNotices}}" min="1" max="10" style="width:4em"></label>
+  </div>
+  <p class="notes">The board is stocked with random missions from missions.json (only the tiers ticked above, and not ones already completed). When completed missions bring it below the minimum, it is topped up again.</p>
+
+  <h2><i class="fa-solid fa-handshake"></i> Approvals and recruiting</h2>
+  <div class="button-row">
+    <label class="tier"><input type="checkbox" name="requireApproval" {{#if requireApproval}}checked{{/if}}> GM must confirm recruiting, deploying and training</label>
+    <label>Maximum recruited heroes <input type="number" name="maxRecruits" value="{{maxRecruits}}" min="1" max="12" style="width:4em"></label>
+  </div>
+  <div class="button-row">
+    <label class="tier"><input type="checkbox" name="showBackground" {{#if showBackground}}checked{{/if}}> Show the notice board background</label>
+    <label class="tier"><input type="checkbox" name="playerButton" {{#if playerButton}}checked{{/if}}> Show the Dispatch button to players (Token controls)</label>
+  </div>
+  <p class="notes">With approval off, player requests are carried out at once, but a GM must still be online. Heroes ticked <b>Available</b> (and not yet <b>Recruited</b>) are listed on the Recruits parchment for players. The GM sees the same list; use the Available checkboxes below to offer or hide heroes.</p>
+
+  <details class="hero-fold" {{#if heroesOpen}}open{{/if}}>
+  <summary><h2><i class="fa-solid fa-user-shield"></i> Heroes</h2></summary>
+  <p class="notes">Edit levels, stats and recruit status, then Save. <b>Level up</b> adds 1 level and gives the hero stat points (the <b>Pts</b> column) and saves right away. A level-up icon appears on the hero card; players click it, spend the points and press <b>Train</b>.</p>
+  <table class="hero-table">
+    <thead><tr><th>Hero</th><th>Lvl</th><th>XP</th>{{#each statHeads}}<th>{{this}}</th>{{/each}}<th>Pts</th><th>Recruited</th><th>Available</th><th></th></tr></thead>
+    <tbody>
+      {{#each heroes}}
+      <tr>
+        <td><b>{{name}}</b><br><small>{{class}}</small></td>
+        <td><input type="number" name="hero.{{id}}.level" value="{{level}}" min="1" max="20"></td>
+        <td><input type="number" name="hero.{{id}}.xp" value="{{xp}}" min="0" step="10" style="width:5em"></td>
+        {{#each stats}}<td><input type="number" name="hero.{{../id}}.stats.{{key}}" value="{{val}}" min="0" max="20"></td>{{/each}}
+        <td><input type="number" name="pending.{{id}}" value="{{pending}}" min="0" max="50" data-tooltip="Unspent stat points"></td>
+        <td><input type="checkbox" name="flags.{{id}}.recruited" {{#if recruited}}checked{{/if}}></td>
+        <td><input type="checkbox" name="flags.{{id}}.recruitable" {{#if recruitable}}checked{{/if}}></td>
+        <td><button type="button" data-action="levelUp" data-hero="{{id}}"><i class="fa-solid fa-arrow-up"></i> Level up</button></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  </details>
+  <div class="button-row">
+    <button type="button" data-action="levelUpAll"><i class="fa-solid fa-angles-up"></i> Level up all heroes</button>
+    <button type="button" data-action="resetHeroes"><i class="fa-solid fa-rotate-left"></i> Reset heroes to heroes.json</button>
+  </div>
+
+  <h2><i class="fa-solid fa-dumbbell"></i> Training</h2>
+  <div class="button-row">
+    <label>Stat points per level-up <input type="number" name="pointsPerLevel" value="{{pointsPerLevel}}" min="0" max="10" style="width:4em"></label>
+    <label>Training duration (in-game hours) <input type="number" name="trainingHours" value="{{trainingHours}}" min="0" max="168" style="width:4em"></label>
+  </div>
+  <p class="notes">When a player presses Train, the GM is asked to approve it. Once approved, the hero's card is removed for the players and the hero is unavailable for this long. A GM must be online.</p>
+
+  <h2><i class="fa-solid fa-heart-crack"></i> Mission aftermath</h2>
+  <div class="button-row">
+    <label>Injury time multiplier (failure) <input type="number" name="injuryMultiplier" value="{{injuryMultiplier}}" min="0" max="10" step="0.25" style="width:4.5em"></label>
+    <label>Injury time multiplier (critical failure) <input type="number" name="critFailMultiplier" value="{{critFailMultiplier}}" min="0" max="10" step="0.25" style="width:4.5em"></label>
+    <label>Celebrating time after a success (in-game hours) <input type="number" name="celebrateHours" value="{{celebrateHours}}" min="0" max="168" style="width:4.5em"></label>
+    <label>Gold goes to (actor) <input type="text" name="lootActor" value="{{lootActor}}" list="dispatch-actors" style="width:12em"><datalist id="dispatch-actors">{{#each actorNames}}<option value="{{this}}">{{/each}}</datalist></label>
+    <label>Gold earner name <input type="text" name="earnerName" value="{{earnerName}}" style="width:12em"></label>
+    <label>Gold received after a success (% of posted) <input type="number" name="rewardPercent" value="{{rewardPercent}}" min="0" max="1000" step="5" style="width:4.5em"></label>
+  </div>
+  <p class="notes">Injury time = the mission's <code>injuryHours</code> in missions.json x the multiplier. A critical failure is a very bad roll on a failed mission. Heroes who complete a mission are unavailable while celebrating.</p>
+
+  <h2><i class="fa-solid fa-triangle-exclamation"></i> Progress</h2>
+  <div class="button-row">
+    <button type="button" class="danger" data-action="resetProgress"><i class="fa-solid fa-trash-arrow-up"></i> Reset all mission progress and hero statuses</button>
+  </div>
+
+  <h2><i class="fa-solid fa-book-open"></i> Mission log</h2>
+  <p class="notes">A journal entry with one page per completed mission ({{logPages}} pages so far).</p>
+  <div class="button-row">
+    <button type="button" data-action="openLog"><i class="fa-solid fa-book"></i> Open mission log</button>
+    <button type="button" data-action="clearLog"><i class="fa-solid fa-eraser"></i> Clear log pages</button>
+  </div>
+
+  <h2><i class="fa-solid fa-folder-open"></i> Module folder</h2>
+  <p class="notes">Browsers cannot open folders on the host computer, so use the file browser or copy the path. Edit <code>heroes.json</code> and <code>missions.json</code> in the <code>data</code> folder, then reload Foundry.</p>
+  <p><code>{{path}}</code></p>
+  <div class="button-row">
+    <button type="button" data-action="openFolder"><i class="fa-solid fa-folder-tree"></i> Browse module folder</button>
+    <button type="button" data-action="copyPath"><i class="fa-solid fa-copy"></i> Copy path</button>
+    {{#each links}}<a class="file-link" href="{{href}}" target="_blank"><i class="fa-solid fa-file-code"></i> {{label}}</a>{{/each}}
+  </div>
+
+  <footer class="settings-footer">
+    <button type="submit"><i class="fa-solid fa-floppy-disk"></i> Save settings</button>
+  </footer>
+</section>

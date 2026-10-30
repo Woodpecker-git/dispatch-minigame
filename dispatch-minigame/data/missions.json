@@ -1,0 +1,5564 @@
+[
+  {
+    "id": "wd-t0-sweep-the-stables",
+    "name": "Sweep the Stables",
+    "subtitle": "Honest Work, Honest Coin",
+    "tier": 0,
+    "description": "A Sea Ward stable needs mucking out before the morning ride. Nothing can go wrong. Probably.",
+    "slots": 1,
+    "durationHours": 2,
+    "requirements": {
+      "strength": 1
+    },
+    "rewards": {
+      "gold": 5,
+      "xp": 25
+    },
+    "failure": {
+      "injuryHours": 0,
+      "note": "Nothing could go wrong."
+    },
+    "guaranteed": true
+  },
+  {
+    "id": "wd-t0-deliver-the-bread",
+    "name": "Deliver the Bread",
+    "subtitle": "Fresh from the Oven",
+    "tier": 0,
+    "description": "A baker needs a basket of loaves carried across the Trades Ward while they are still warm.",
+    "slots": 1,
+    "durationHours": 2,
+    "requirements": {
+      "agility": 1
+    },
+    "rewards": {
+      "gold": 5,
+      "xp": 25
+    },
+    "failure": {
+      "injuryHours": 0,
+      "note": "Nothing could go wrong."
+    },
+    "guaranteed": true
+  },
+  {
+    "id": "wd-t0-count-the-barrels",
+    "name": "Count the Barrels",
+    "subtitle": "A Dockside Tally",
+    "tier": 0,
+    "description": "A dock clerk wants the day's barrels counted twice. Bring a steady head and a sharp eye.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "intelligence": 1
+    },
+    "rewards": {
+      "gold": 5,
+      "xp": 25
+    },
+    "failure": {
+      "injuryHours": 0,
+      "note": "Nothing could go wrong."
+    },
+    "guaranteed": true
+  },
+  {
+    "id": "wd-t1-rats-in-the-cellar",
+    "name": "Rats in the Cellar",
+    "subtitle": "Dock Ward Tavern Trouble",
+    "tier": 1,
+    "description": "A Dock Ward tavern's cellar is overrun with giant rats. Clear them out before closing time.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "strength": 6,
+      "constitution": 5
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 50
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The rats were bigger than promised."
+    }
+  },
+  {
+    "id": "wd-t1-the-lost-satchel",
+    "name": "The Lost Satchel",
+    "subtitle": "A Letter Gone Astray",
+    "tier": 1,
+    "description": "A courier lost a sealed satchel somewhere in the Trades Ward. Find it before the City Watch does.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "intelligence": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The satchel was already gone."
+    }
+  },
+  {
+    "id": "wd-t1-cutpurses-at-the-market",
+    "name": "Cutpurses at the Market",
+    "subtitle": "Field Ward Fingers",
+    "tier": 1,
+    "description": "Pickpockets are fleecing shoppers in the Field Ward. Catch them red-handed.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "agility": 6,
+      "charisma": 5
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The thieves melted into the crowd."
+    },
+    "hiddenSkill": "Perception"
+  },
+  {
+    "id": "wd-t1-runaway-tressym",
+    "name": "Runaway Tressym",
+    "subtitle": "A Noble's Winged Pet",
+    "tier": 1,
+    "description": "A noble's tressym fled across the Castle Ward rooftops. Bring it home unharmed.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "agility": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The tressym escaped again, sulking."
+    }
+  },
+  {
+    "id": "wd-t1-stuck-on-the-high-road",
+    "name": "Stuck on the High Road",
+    "subtitle": "A Grain Cart in Peril",
+    "tier": 1,
+    "description": "A grain wagon is stuck in mud outside the north gate with bandits circling. Hold them off.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "strength": 6,
+      "constitution": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 70
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The bandits drove off with the grain."
+    }
+  },
+  {
+    "id": "wd-t1-candles-for-dawn",
+    "name": "Candles for Dawn",
+    "subtitle": "Escort the Chandler",
+    "tier": 1,
+    "description": "A chandler needs a guard to carry candles through dark alleys to the temple before sunrise.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "strength": 6,
+      "agility": 5
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The candles were smashed in an ambush."
+    },
+    "hiddenSkill": "Perception"
+  },
+  {
+    "id": "wd-t1-the-haunted-privy",
+    "name": "The Haunted Privy",
+    "subtitle": "Spooked in the Southern Ward",
+    "tier": 1,
+    "description": "Residents swear a ghost wails in an old privy. Find out who is really behind it.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "wisdom": 6,
+      "charisma": 6
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The prankster slipped away laughing."
+    }
+  },
+  {
+    "id": "wd-t1-unpaid-debts",
+    "name": "Unpaid Debts",
+    "subtitle": "Collecting for Honest Coin",
+    "tier": 1,
+    "description": "A merchant wants debts collected from a stubborn tavern owner without breaking the furniture.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "charisma": 6,
+      "strength": 5
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 50
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The furniture got broken anyway."
+    },
+    "hiddenSkill": "Intimidation"
+  },
+  {
+    "id": "wd-t1-stable-thief",
+    "name": "Stable Thief",
+    "subtitle": "Missing Horses at Dawn",
+    "tier": 1,
+    "description": "Three horses vanished from a Sea Ward stable overnight. Track the hoofprints.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "wisdom": 6,
+      "agility": 5
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 70
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The trail went cold in the rain."
+    }
+  },
+  {
+    "id": "wd-t1-brawl-at-the-yawning-portal",
+    "name": "Brawl at the Yawning Portal",
+    "subtitle": "Keep the Peace",
+    "tier": 1,
+    "description": "A wager gone wrong is turning ugly at the famous inn. Calm things before the Guard arrives.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "charisma": 6,
+      "constitution": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 90
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The brawl spilled into the street."
+    }
+  },
+  {
+    "id": "wd-t1-poisoned-well",
+    "name": "Poisoned Well",
+    "subtitle": "Water Gone Foul",
+    "tier": 1,
+    "description": "A well in the Trades Ward has turned foul. Trace the contamination to its source.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "intelligence": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 80
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The source stayed a mystery."
+    },
+    "hiddenSkill": "Medicine"
+  },
+  {
+    "id": "wd-t1-the-apprentice-s-sludge",
+    "name": "The Apprentice's Sludge",
+    "subtitle": "A Bubbling Mess",
+    "tier": 1,
+    "description": "An alchemist's apprentice let a vat of green sludge loose in the cellar. Contain it.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "constitution": 6,
+      "intelligence": 5
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 90
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The sludge oozed into the sewers."
+    }
+  },
+  {
+    "id": "wd-t1-dockside-night-watch",
+    "name": "Dockside Night Watch",
+    "subtitle": "Short a Guard",
+    "tier": 1,
+    "description": "The City Guard is shorthanded. Walk a tricky night patrol along the harbor.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "constitution": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 90
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "A smuggler slipped past the patrol."
+    },
+    "hiddenSkill": "Perception"
+  },
+  {
+    "id": "wd-t1-the-missing-bard",
+    "name": "The Missing Bard",
+    "subtitle": "Where Did He Go?",
+    "tier": 1,
+    "description": "A famous bard missed three performances. Find him before his patron's temper flares.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "charisma": 6,
+      "wisdom": 6
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 80
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "He was found, but too late."
+    }
+  },
+  {
+    "id": "wd-t1-warehouse-watch",
+    "name": "Warehouse Watch",
+    "subtitle": "Guard Duty on Dock Street",
+    "tier": 1,
+    "description": "Valuable cargo sits in a warehouse tonight. Stay awake and keep it safe.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "constitution": 6,
+      "agility": 5
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 80
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "Thieves tunnelled in from the sewers."
+    }
+  },
+  {
+    "id": "wd-t1-wolves-on-the-trade-way",
+    "name": "Wolves on the Trade Way",
+    "subtitle": "Hungry Beasts at the Gates",
+    "tier": 1,
+    "description": "Wolves have been harassing travellers on the Trade Way. Drive them off.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "strength": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 80
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The pack grew bolder."
+    },
+    "hiddenSkill": "Survival"
+  },
+  {
+    "id": "wd-t1-locked-out",
+    "name": "Locked Out",
+    "subtitle": "A Wizard's Sealed Door",
+    "tier": 1,
+    "description": "A wizard locked himself out of his shop with a clever spell. Open it without damage.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "intelligence": 6,
+      "agility": 5
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 70
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The spell sealed the door tighter."
+    }
+  },
+  {
+    "id": "wd-t1-festival-crates",
+    "name": "Festival Crates",
+    "subtitle": "Moving Day for the Fair",
+    "tier": 1,
+    "description": "The summer fair needs stage crates hauled across the city before sundown.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "strength": 6,
+      "constitution": 6
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "A crate of fireworks went off early."
+    },
+    "hiddenSkill": "Athletics"
+  },
+  {
+    "id": "wd-t1-the-beggar-s-secret",
+    "name": "The Beggar's Secret",
+    "subtitle": "A Whisper in the Alley",
+    "tier": 1,
+    "description": "A street beggar claims to have seen something terrible. Earn his trust and hear it.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "charisma": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 50
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "He clammed up and vanished."
+    }
+  },
+  {
+    "id": "wd-t1-smugglers-tunnel",
+    "name": "Smugglers' Tunnel",
+    "subtitle": "A Hole Under the Docks",
+    "tier": 1,
+    "description": "Dockworkers found a tunnel beneath a warehouse. Explore it and report what is inside.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "agility": 6,
+      "constitution": 5
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 50
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The tunnel collapsed behind you."
+    }
+  },
+  {
+    "id": "wd-t1-the-cursed-coin",
+    "name": "The Cursed Coin",
+    "subtitle": "Don't Spend It!",
+    "tier": 1,
+    "description": "A tavern keeper received a coin that hums at night. Find out what it wants.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "intelligence": 6,
+      "charisma": 6
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 70
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The coin returned to the tavern."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t1-lost-in-the-sewers",
+    "name": "Lost in the Sewers",
+    "subtitle": "A Child Went Down",
+    "tier": 1,
+    "description": "A child chased a ball down a sewer grate in the Field Ward. Bring them back.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "agility": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The sewers were a maze."
+    }
+  },
+  {
+    "id": "wd-t1-the-tax-dodger",
+    "name": "The Tax Dodger",
+    "subtitle": "Forged Merchant Seals",
+    "tier": 1,
+    "description": "A merchant's seals look wrong. Quietly investigate before the tax collectors arrive.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "intelligence": 6,
+      "charisma": 5
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "He bribed his way out."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t1-mad-dog-of-the-docks",
+    "name": "Mad Dog of the Docks",
+    "subtitle": "A Frothing Menace",
+    "tier": 1,
+    "description": "A rabid mastiff has bitten two sailors. Subdue it without killing it.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "strength": 6,
+      "agility": 6
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 90
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The dog bolted into the harbor."
+    }
+  },
+  {
+    "id": "wd-t1-guard-the-wedding",
+    "name": "Guard the Wedding",
+    "subtitle": "Vows and Villains",
+    "tier": 1,
+    "description": "A minor noble's wedding has received threats. Mingle with the guests and watch for trouble.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "charisma": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The cake exploded."
+    }
+  },
+  {
+    "id": "wd-t1-chimney-sweep-trouble",
+    "name": "Chimney Sweep Trouble",
+    "subtitle": "Soot Ward Mishap",
+    "tier": 1,
+    "description": "A noble's chimney is blocked by something that squeaks. Clear it before the dinner party.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "agility": 5,
+      "constitution": 6
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The soot cloud ruined the carpets."
+    },
+    "hiddenSkill": "Acrobatics"
+  },
+  {
+    "id": "wd-t1-the-missing-goat",
+    "name": "The Missing Goat",
+    "subtitle": "Field Ward Farmstead",
+    "tier": 1,
+    "description": "A prize goat wandered off toward the city walls. Bring it home.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "agility": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 90
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The goat bit back and escaped again."
+    },
+    "hiddenSkill": "Animal Handling"
+  },
+  {
+    "id": "wd-t1-fishmonger-s-feud",
+    "name": "Fishmonger's Feud",
+    "subtitle": "Dock Ward Shouting Match",
+    "tier": 1,
+    "description": "Two fishmongers are about to come to blows. Calm them before the guard arrives.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "charisma": 6,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 80
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "Both vendors blamed you."
+    }
+  },
+  {
+    "id": "wd-t1-barrel-rollers",
+    "name": "Barrel Rollers",
+    "subtitle": "Dock Ward Cargo Chaos",
+    "tier": 1,
+    "description": "A loose cask rolls toward the harbor. Stop it, then haul the rest to the warehouse.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "strength": 5,
+      "constitution": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The wine went into the bay."
+    }
+  },
+  {
+    "id": "wd-t1-whispers-at-the-well",
+    "name": "Whispers at the Well",
+    "subtitle": "Trades Ward Rumor Mill",
+    "tier": 1,
+    "description": "A rumor says the well water glows at night. Find out who is spreading it.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "wisdom": 5,
+      "charisma": 6
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 90
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The rumor spread even farther."
+    }
+  },
+  {
+    "id": "wd-t1-the-stolen-signboard",
+    "name": "The Stolen Signboard",
+    "subtitle": "Castle Ward Petty Theft",
+    "tier": 1,
+    "description": "A tavern's painted sign was stolen overnight. Track it down.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "agility": 5,
+      "intelligence": 6
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The sign was chopped for firewood."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t1-beggars-blanket-drive",
+    "name": "Beggars' Blanket Drive",
+    "subtitle": "North Ward Charity",
+    "tier": 1,
+    "description": "Collect blankets for the poor before the first frost.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "charisma": 6,
+      "constitution": 5
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "Few doors opened to you."
+    }
+  },
+  {
+    "id": "wd-t1-spiders-in-the-attic",
+    "name": "Spiders in the Attic",
+    "subtitle": "Sea Ward Pest Control",
+    "tier": 1,
+    "description": "A widow's attic is webbed from floor to rafters. Evict the occupants.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "strength": 5,
+      "agility": 6
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The spiders won."
+    }
+  },
+  {
+    "id": "wd-t1-the-gambler-s-marker",
+    "name": "The Gambler's Marker",
+    "subtitle": "Dock Ward Collection",
+    "tier": 1,
+    "description": "A gambler owes a debt and has gone to ground. Persuade him to pay.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "charisma": 5,
+      "agility": 5
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 70
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "He slipped out the back."
+    },
+    "hiddenSkill": "Intimidation"
+  },
+  {
+    "id": "wd-t1-spoiled-cargo",
+    "name": "Spoiled Cargo",
+    "subtitle": "Dock Ward Inspection",
+    "tier": 1,
+    "description": "A shipment of grain smells wrong. Determine whether it is safe to sell.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "wisdom": 6,
+      "intelligence": 6
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "You missed the blight."
+    },
+    "hiddenSkill": "Medicine"
+  },
+  {
+    "id": "wd-t1-lamplighter-s-round",
+    "name": "Lamplighter's Round",
+    "subtitle": "Trades Ward Night Duty",
+    "tier": 1,
+    "description": "The lamplighter is sick. Light the streets of the ward before dusk falls.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "agility": 5,
+      "constitution": 5
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 80
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "Half the street stayed dark."
+    }
+  },
+  {
+    "id": "wd-t1-tangled-nets",
+    "name": "Tangled Nets",
+    "subtitle": "Dock Ward Fishing Fleet",
+    "tier": 1,
+    "description": "A knot of nets has trapped a fishing boat in the harbor. Cut it free.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "strength": 6,
+      "agility": 6
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 50
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The boat drifted onto the rocks."
+    },
+    "hiddenSkill": "Athletics"
+  },
+  {
+    "id": "wd-t1-the-bard-s-lost-lute",
+    "name": "The Bard's Lost Lute",
+    "subtitle": "South Ward Crowd Pleaser",
+    "tier": 1,
+    "description": "A bard lost his lute and his nerve. Recover one and rekindle the other.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "charisma": 5,
+      "intelligence": 6
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The crowd booed him off."
+    }
+  },
+  {
+    "id": "wd-t1-pickpocket-sweep",
+    "name": "Pickpocket Sweep",
+    "subtitle": "Market Day Patrol",
+    "tier": 1,
+    "description": "Cutpurses are working the crowd. Watch and catch them red-handed.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "agility": 6,
+      "wisdom": 6
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The thieves took your purse too."
+    }
+  },
+  {
+    "id": "wd-t1-locked-cellar-door",
+    "name": "Locked Cellar Door",
+    "subtitle": "Castle Ward Locksmith",
+    "tier": 1,
+    "description": "A merchant's cellar door will not open and he suspects something is behind it.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "intelligence": 6,
+      "agility": 6
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 90
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The lock was a trap."
+    },
+    "hiddenSkill": "Sleight of Hand"
+  },
+  {
+    "id": "wd-t1-mud-in-the-sewers",
+    "name": "Mud in the Sewers",
+    "subtitle": "Sewer Cleanup",
+    "tier": 1,
+    "description": "A collapsed tunnel is flooding a street. Shore it up.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "strength": 6,
+      "constitution": 5
+    },
+    "rewards": {
+      "gold": 10,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "The tunnel gave way on you."
+    }
+  },
+  {
+    "id": "wd-t1-the-herbalist-s-order",
+    "name": "The Herbalist's Order",
+    "subtitle": "Field Ward Errand",
+    "tier": 1,
+    "description": "Gather rare herbs that grow only outside the city walls.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "wisdom": 5,
+      "intelligence": 5
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 50
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "You came back with the wrong plants."
+    },
+    "hiddenSkill": "Nature"
+  },
+  {
+    "id": "wd-t1-sleepwalking-noble",
+    "name": "Sleepwalking Noble",
+    "subtitle": "North Ward Night Watch",
+    "tier": 1,
+    "description": "A young lord walks the rooftops in his sleep. Keep him safe until dawn.",
+    "slots": 1,
+    "durationHours": 5,
+    "requirements": {
+      "agility": 6,
+      "wisdom": 6
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 5,
+      "note": "He woke at the worst moment."
+    },
+    "hiddenSkill": "Insight"
+  },
+  {
+    "id": "wd-t1-tavern-quiz-night",
+    "name": "Tavern Quiz Night",
+    "subtitle": "Yawning Portal Trivia",
+    "tier": 1,
+    "description": "A tavern offers coin to anyone who can win its lore contest.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "intelligence": 6,
+      "charisma": 6
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "You lost to a drunk halfling."
+    }
+  },
+  {
+    "id": "wd-t1-the-stubborn-mule",
+    "name": "The Stubborn Mule",
+    "subtitle": "Trade Way Troubles",
+    "tier": 1,
+    "description": "A mule blocks the gate and will not move. Traffic is piling up.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "strength": 5,
+      "charisma": 5
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The mule kicked a guard."
+    }
+  },
+  {
+    "id": "wd-t1-haunted-doll",
+    "name": "Haunted Doll",
+    "subtitle": "South Ward Spookiness",
+    "tier": 1,
+    "description": "A child's doll giggles at midnight. Find out why.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "wisdom": 6,
+      "intelligence": 6
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 90
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The doll stared back."
+    }
+  },
+  {
+    "id": "wd-t1-guard-the-granary",
+    "name": "Guard the Granary",
+    "subtitle": "Trades Ward Night Shift",
+    "tier": 1,
+    "description": "Rats and thieves both want the city's grain. Keep watch until morning.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "constitution": 6,
+      "wisdom": 6
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 80
+    },
+    "failure": {
+      "injuryHours": 6,
+      "note": "The thieves got in anyway."
+    }
+  },
+  {
+    "id": "wd-t1-escort-the-pilgrims",
+    "name": "Escort the Pilgrims",
+    "subtitle": "Road to Temple",
+    "tier": 1,
+    "description": "A group of pilgrims needs a safe walk to the temple.",
+    "slots": 1,
+    "durationHours": 4,
+    "requirements": {
+      "constitution": 6,
+      "wisdom": 6
+    },
+    "rewards": {
+      "gold": 25,
+      "xp": 50
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "A pilgrim twisted an ankle."
+    }
+  },
+  {
+    "id": "wd-t1-counterfeit-coins",
+    "name": "Counterfeit Coins",
+    "subtitle": "Trades Ward Fraud",
+    "tier": 1,
+    "description": "A baker has been paid in lead coins. Find the source.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "intelligence": 5,
+      "wisdom": 5
+    },
+    "rewards": {
+      "gold": 15,
+      "xp": 60
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The coiner was long gone."
+    }
+  },
+  {
+    "id": "wd-t1-festival-fireworks",
+    "name": "Festival Fireworks",
+    "subtitle": "Castle Ward Celebration",
+    "tier": 1,
+    "description": "Help a mage's apprentice set up fireworks without burning down the street.",
+    "slots": 1,
+    "durationHours": 3,
+    "requirements": {
+      "intelligence": 6,
+      "agility": 5
+    },
+    "rewards": {
+      "gold": 20,
+      "xp": 100
+    },
+    "failure": {
+      "injuryHours": 4,
+      "note": "The fireworks went off early."
+    }
+  },
+  {
+    "id": "wd-t2-the-blackstaff-s-errand",
+    "name": "The Blackstaff's Errand",
+    "subtitle": "A Delivery for the Tower",
+    "tier": 2,
+    "description": "A wizard's apprentice needs a fragile crate delivered to a tower without opening it.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "agility": 14,
+      "intelligence": 12
+    },
+    "rewards": {
+      "gold": 95,
+      "xp": 200
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "The crate hummed and cracked."
+    }
+  },
+  {
+    "id": "wd-t2-zhentarim-skimming",
+    "name": "Zhentarim Skimming",
+    "subtitle": "Caravan Shortfall",
+    "tier": 2,
+    "description": "A caravan master suspects his guards of skimming goods. Find the traitor.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "charisma": 14,
+      "wisdom": 12
+    },
+    "rewards": {
+      "gold": 85,
+      "xp": 240
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The traitor fled with the loot."
+    }
+  },
+  {
+    "id": "wd-t2-bandits-on-the-triboar-trail",
+    "name": "Bandits on the Triboar Trail",
+    "subtitle": "Thornwood Raiders",
+    "tier": 2,
+    "description": "Bandits camp near the Triboar Trail. Scatter them and recover the stolen goods.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "strength": 14,
+      "agility": 11,
+      "constitution": 10
+    },
+    "rewards": {
+      "gold": 70,
+      "xp": 220
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "The ambush caught you in a ravine."
+    }
+  },
+  {
+    "id": "wd-t2-the-cassalanter-dinner",
+    "name": "The Cassalanter Dinner",
+    "subtitle": "Poison on the Menu",
+    "tier": 2,
+    "description": "Rumor says a noble family plans something dark at dinner. Go in as staff and look.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "charisma": 13,
+      "agility": 12
+    },
+    "rewards": {
+      "gold": 75,
+      "xp": 160
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "Staff were thrown out at dawn."
+    }
+  },
+  {
+    "id": "wd-t2-troll-under-the-bridge",
+    "name": "Troll Under the Bridge",
+    "subtitle": "Toll Gone Wrong",
+    "tier": 2,
+    "description": "A troll has claimed a bridge on the South Road. Convince it to leave, or remove it.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "strength": 13,
+      "constitution": 12
+    },
+    "rewards": {
+      "gold": 95,
+      "xp": 210
+    },
+    "failure": {
+      "injuryHours": 11,
+      "note": "The troll hurled a boulder."
+    }
+  },
+  {
+    "id": "wd-t2-missing-silk-shipment",
+    "name": "Missing Silk Shipment",
+    "subtitle": "Sea Ward Seizure",
+    "tier": 2,
+    "description": "A silk shipment vanished from a bonded warehouse. Follow the paper trail.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "intelligence": 13,
+      "wisdom": 12
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 180
+    },
+    "failure": {
+      "injuryHours": 11,
+      "note": "The records burned overnight."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t2-the-whispering-mask",
+    "name": "The Whispering Mask",
+    "subtitle": "Cursed in the Market",
+    "tier": 2,
+    "description": "A mask for sale in the Trades Ward whispers at night. Learn where it came from.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "intelligence": 14,
+      "wisdom": 13
+    },
+    "rewards": {
+      "gold": 55,
+      "xp": 180
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The mask whispered back."
+    }
+  },
+  {
+    "id": "wd-t2-gnoll-scouts",
+    "name": "Gnoll Scouts",
+    "subtitle": "Sighted at Misty Forest",
+    "tier": 2,
+    "description": "Gnoll scouts were seen at the forest's edge. Track them without being noticed.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "agility": 13,
+      "wisdom": 12
+    },
+    "rewards": {
+      "gold": 70,
+      "xp": 150
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "The scouts spotted you first."
+    },
+    "hiddenSkill": "Survival"
+  },
+  {
+    "id": "wd-t2-smuggler-s-cove",
+    "name": "Smuggler's Cove",
+    "subtitle": "Moonlit Contraband",
+    "tier": 2,
+    "description": "A cove below the cliffs hides contraband. Raid it before the tide comes in.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "agility": 13,
+      "constitution": 12
+    },
+    "rewards": {
+      "gold": 95,
+      "xp": 240
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "The tide came early."
+    }
+  },
+  {
+    "id": "wd-t2-the-haunted-theatre",
+    "name": "The Haunted Theatre",
+    "subtitle": "Curtain Call of the Dead",
+    "tier": 2,
+    "description": "A North Ward theatre is haunted by a jealous actor. Put his spirit to rest.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "charisma": 13,
+      "wisdom": 11
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 180
+    },
+    "failure": {
+      "injuryHours": 11,
+      "note": "The ghost took a bow and a victim."
+    }
+  },
+  {
+    "id": "wd-t2-vigil-in-the-city-of-the-dead",
+    "name": "Vigil in the City of the Dead",
+    "subtitle": "Midnight Tombs",
+    "tier": 2,
+    "description": "Grave robbers have been seen in the City of the Dead. Catch them in the act.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "constitution": 14,
+      "strength": 12
+    },
+    "rewards": {
+      "gold": 80,
+      "xp": 220
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The robbers fled into the tombs."
+    },
+    "hiddenSkill": "Perception"
+  },
+  {
+    "id": "wd-t2-kidnapped-heir",
+    "name": "Kidnapped Heir",
+    "subtitle": "A Ransom Note",
+    "tier": 2,
+    "description": "A merchant's heir was snatched. Trace the ransom note back to its author.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "intelligence": 13,
+      "charisma": 11
+    },
+    "rewards": {
+      "gold": 85,
+      "xp": 200
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "The note was a decoy."
+    }
+  },
+  {
+    "id": "wd-t2-wyvern-feathers",
+    "name": "Wyvern Feathers",
+    "subtitle": "Cliffside Harvest",
+    "tier": 2,
+    "description": "A tailor needs wyvern feathers. Take them from the nest, not the wyvern.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "agility": 13,
+      "strength": 12
+    },
+    "rewards": {
+      "gold": 100,
+      "xp": 250
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "The wyvern came home early."
+    },
+    "hiddenSkill": "Athletics"
+  },
+  {
+    "id": "wd-t2-the-bribed-inspector",
+    "name": "The Bribed Inspector",
+    "subtitle": "A Crooked Customs Officer",
+    "tier": 2,
+    "description": "A customs officer is on the take. Prove it without raising suspicion.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "charisma": 13,
+      "intelligence": 12
+    },
+    "rewards": {
+      "gold": 100,
+      "xp": 180
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "He tipped off the smugglers."
+    }
+  },
+  {
+    "id": "wd-t2-plague-rats",
+    "name": "Plague Rats",
+    "subtitle": "Quarantine Trouble",
+    "tier": 2,
+    "description": "Sick rats have infested a Southern Ward tenement. Contain the outbreak quickly.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "wisdom": 13,
+      "constitution": 12
+    },
+    "rewards": {
+      "gold": 55,
+      "xp": 150
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The outbreak spread two blocks."
+    }
+  },
+  {
+    "id": "wd-t2-rescue-from-skullport",
+    "name": "Rescue from Skullport",
+    "subtitle": "Freedom by Nightfall",
+    "tier": 2,
+    "description": "Slavers hold three captives in a pen. Break them out before the ship leaves.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "strength": 13,
+      "agility": 12
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 150
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The slavers doubled their guards."
+    },
+    "hiddenSkill": "Stealth"
+  },
+  {
+    "id": "wd-t2-guild-rivalry",
+    "name": "Guild Rivalry",
+    "subtitle": "Two Guilds, One Warehouse",
+    "tier": 2,
+    "description": "Two merchant guilds are about to brawl. Settle the dispute peacefully.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "charisma": 14,
+      "wisdom": 12
+    },
+    "rewards": {
+      "gold": 75,
+      "xp": 210
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "Both guilds were furious with you."
+    }
+  },
+  {
+    "id": "wd-t2-ghoul-pit",
+    "name": "Ghoul Pit",
+    "subtitle": "Beneath the Old Graveyard",
+    "tier": 2,
+    "description": "Ghouls dig beneath an old cemetery. End the threat for good.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "strength": 13,
+      "constitution": 12
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 230
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "The ghouls' touch was nasty."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t2-the-singing-statue",
+    "name": "The Singing Statue",
+    "subtitle": "A Plaza Mystery",
+    "tier": 2,
+    "description": "A statue in a plaza sings at night. Find out what animates it.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "intelligence": 12,
+      "wisdom": 11
+    },
+    "rewards": {
+      "gold": 50,
+      "xp": 150
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The statue cracked and shouted."
+    }
+  },
+  {
+    "id": "wd-t2-dragon-cult-rumors",
+    "name": "Dragon Cult Rumors",
+    "subtitle": "Whispers in the Taproom",
+    "tier": 2,
+    "description": "Rumors say cultists meet in a tavern cellar. Infiltrate their gathering.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "charisma": 13,
+      "agility": 12
+    },
+    "rewards": {
+      "gold": 85,
+      "xp": 160
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "Your cover was blown early."
+    }
+  },
+  {
+    "id": "wd-t2-the-poisoned-chalice",
+    "name": "The Poisoned Chalice",
+    "subtitle": "A Temple Banquet",
+    "tier": 2,
+    "description": "A priest fears poison at a temple feast. Watch, taste, and find the culprit.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "wisdom": 13,
+      "intelligence": 11
+    },
+    "rewards": {
+      "gold": 55,
+      "xp": 200
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "A guest collapsed before you could act."
+    },
+    "hiddenSkill": "Insight"
+  },
+  {
+    "id": "wd-t2-river-pirates",
+    "name": "River Pirates",
+    "subtitle": "Dangers on the Dessarin",
+    "tier": 2,
+    "description": "Pirates are robbing barges on the river. Board their ship and take back the cargo.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "strength": 13,
+      "agility": 11,
+      "constitution": 11
+    },
+    "rewards": {
+      "gold": 75,
+      "xp": 190
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The pirates scuttled their own ship."
+    }
+  },
+  {
+    "id": "wd-t2-the-dwarven-heirloom",
+    "name": "The Dwarven Heirloom",
+    "subtitle": "A Family's Lost Hammer",
+    "tier": 2,
+    "description": "A dwarf clan lost its ancestral hammer. Find it in a pawnbroker's back room.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "intelligence": 14,
+      "charisma": 12
+    },
+    "rewards": {
+      "gold": 65,
+      "xp": 150
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "The hammer had been melted down."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t2-frost-giant-tracks",
+    "name": "Frost Giant Tracks",
+    "subtitle": "Strange Footprints",
+    "tier": 2,
+    "description": "Giant-sized prints were found north of the city. Track them and warn the garrison.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "wisdom": 13,
+      "constitution": 11
+    },
+    "rewards": {
+      "gold": 75,
+      "xp": 220
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The giants found you first."
+    }
+  },
+  {
+    "id": "wd-t2-the-duelist-s-challenge",
+    "name": "The Duelist's Challenge",
+    "subtitle": "Honor in the Yard",
+    "tier": 2,
+    "description": "A duelist has challenged a nobleman. Stand in as his champion.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "strength": 14,
+      "agility": 12
+    },
+    "rewards": {
+      "gold": 95,
+      "xp": 150
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The duelist's blade was faster."
+    }
+  },
+  {
+    "id": "wd-t2-haunted-lighthouse",
+    "name": "Haunted Lighthouse",
+    "subtitle": "Sea Ward Beacon",
+    "tier": 2,
+    "description": "The harbor lighthouse flickers with a ghostly glow. Ships are in danger.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "wisdom": 13,
+      "constitution": 14,
+      "charisma": 12
+    },
+    "rewards": {
+      "gold": 95,
+      "xp": 210
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The light went out for good."
+    }
+  },
+  {
+    "id": "wd-t2-spiders-of-the-deep-market",
+    "name": "Spiders of the Deep Market",
+    "subtitle": "Skullport Fringe",
+    "tier": 2,
+    "description": "Giant spiders are nesting in an abandoned market stall beneath the city.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "strength": 13,
+      "agility": 14,
+      "constitution": 13
+    },
+    "rewards": {
+      "gold": 80,
+      "xp": 170
+    },
+    "failure": {
+      "injuryHours": 11,
+      "note": "The webs held fast."
+    }
+  },
+  {
+    "id": "wd-t2-the-mimic-chest",
+    "name": "The Mimic Chest",
+    "subtitle": "Noble Estate Trap",
+    "tier": 2,
+    "description": "A chest in an old villa bites. Open it without losing a hand.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "agility": 13,
+      "intelligence": 13,
+      "wisdom": 10
+    },
+    "rewards": {
+      "gold": 65,
+      "xp": 240
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The chest swallowed the key."
+    }
+  },
+  {
+    "id": "wd-t2-merchant-caravan-ambush",
+    "name": "Merchant Caravan Ambush",
+    "subtitle": "Trade Way Patrol",
+    "tier": 2,
+    "description": "A caravan reports bandits near the road. Escort it through.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "strength": 11,
+      "constitution": 10,
+      "wisdom": 12
+    },
+    "rewards": {
+      "gold": 95,
+      "xp": 230
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "The caravan was robbed anyway."
+    }
+  },
+  {
+    "id": "wd-t2-the-silent-choir",
+    "name": "The Silent Choir",
+    "subtitle": "Temple Mystery",
+    "tier": 2,
+    "description": "A temple choir has lost its voice and no one knows why.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "wisdom": 14,
+      "charisma": 11
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 220
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "The choir fell silent forever."
+    }
+  },
+  {
+    "id": "wd-t2-stolen-ship-s-cargo",
+    "name": "Stolen Ship's Cargo",
+    "subtitle": "Docks Investigation",
+    "tier": 2,
+    "description": "A ship's cargo disappeared overnight. Someone in the harbor knows where.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "intelligence": 10,
+      "wisdom": 11,
+      "charisma": 14
+    },
+    "rewards": {
+      "gold": 80,
+      "xp": 190
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "The cargo was already sold."
+    }
+  },
+  {
+    "id": "wd-t2-flooded-catacombs",
+    "name": "Flooded Catacombs",
+    "subtitle": "City of the Dead",
+    "tier": 2,
+    "description": "Water has seeped into the catacombs, disturbing the rest of the undead.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "strength": 14,
+      "constitution": 12,
+      "intelligence": 13
+    },
+    "rewards": {
+      "gold": 55,
+      "xp": 150
+    },
+    "failure": {
+      "injuryHours": 11,
+      "note": "The dead rose in the flood."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t2-gladiators-of-the-pit",
+    "name": "Gladiators of the Pit",
+    "subtitle": "Illegal Fight Ring",
+    "tier": 2,
+    "description": "A hidden fighting pit wants fresh blood. Win a bout or shut it down.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "strength": 13,
+      "constitution": 13,
+      "agility": 12
+    },
+    "rewards": {
+      "gold": 55,
+      "xp": 170
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "You lost the fight."
+    }
+  },
+  {
+    "id": "wd-t2-the-wizard-s-cat",
+    "name": "The Wizard's Cat",
+    "subtitle": "Tower Errand",
+    "tier": 2,
+    "description": "A wizard's cat has teleported itself somewhere in the city.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "agility": 12,
+      "intelligence": 13,
+      "wisdom": 11
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 180
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The cat blinked away again."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t2-kobold-tunnel-raid",
+    "name": "Kobold Tunnel Raid",
+    "subtitle": "Under the City",
+    "tier": 2,
+    "description": "Kobolds are tunneling beneath a bank vault. Stop them.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "strength": 11,
+      "agility": 14,
+      "intelligence": 10
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 230
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "The vault was breached."
+    }
+  },
+  {
+    "id": "wd-t2-the-merchant-prince-s-party",
+    "name": "The Merchant Prince's Party",
+    "subtitle": "Noble Ball",
+    "tier": 2,
+    "description": "Protect a merchant prince from assassins at his own party.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "wisdom": 14,
+      "charisma": 12,
+      "agility": 11
+    },
+    "rewards": {
+      "gold": 75,
+      "xp": 180
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The assassin slipped out."
+    },
+    "hiddenSkill": "Perception"
+  },
+  {
+    "id": "wd-t2-rival-alchemists",
+    "name": "Rival Alchemists",
+    "subtitle": "Guild Dispute",
+    "tier": 2,
+    "description": "Two alchemists accuse each other of poisoning. Find the truth.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "intelligence": 11,
+      "wisdom": 14,
+      "constitution": 11
+    },
+    "rewards": {
+      "gold": 65,
+      "xp": 180
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The poison was never found."
+    }
+  },
+  {
+    "id": "wd-t2-bounty-on-a-bugbear",
+    "name": "Bounty on a Bugbear",
+    "subtitle": "Wanted Poster",
+    "tier": 2,
+    "description": "A bugbear with a price on its head lives in the North Ward ruins.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "strength": 14,
+      "agility": 13,
+      "constitution": 12
+    },
+    "rewards": {
+      "gold": 50,
+      "xp": 170
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "The bugbear ambushed you."
+    }
+  },
+  {
+    "id": "wd-t2-the-silent-bell",
+    "name": "The Silent Bell",
+    "subtitle": "Temple Tower",
+    "tier": 2,
+    "description": "The great bell will not ring. Something is stuck inside.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "strength": 12,
+      "agility": 11,
+      "intelligence": 14
+    },
+    "rewards": {
+      "gold": 75,
+      "xp": 230
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "Something screamed back."
+    }
+  },
+  {
+    "id": "wd-t2-smuggled-magic",
+    "name": "Smuggled Magic",
+    "subtitle": "Harbor Crackdown",
+    "tier": 2,
+    "description": "Illegal magic items are slipping through customs. Find the smuggler.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "intelligence": 10,
+      "wisdom": 11,
+      "charisma": 10
+    },
+    "rewards": {
+      "gold": 65,
+      "xp": 180
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The smuggler bribed a guard."
+    }
+  },
+  {
+    "id": "wd-t2-the-poisoned-orchard",
+    "name": "The Poisoned Orchard",
+    "subtitle": "Field Ward Blight",
+    "tier": 2,
+    "description": "An orchard's apples have turned black. Find the cause.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "wisdom": 11,
+      "constitution": 13,
+      "intelligence": 14
+    },
+    "rewards": {
+      "gold": 95,
+      "xp": 230
+    },
+    "failure": {
+      "injuryHours": 11,
+      "note": "The blight spread."
+    }
+  },
+  {
+    "id": "wd-t2-dire-rats-of-the-sewer-king",
+    "name": "Dire Rats of the Sewer King",
+    "subtitle": "Under the City",
+    "tier": 2,
+    "description": "A rat-king rules a section of the sewers. Take back the tunnels.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "strength": 10,
+      "constitution": 10,
+      "agility": 13
+    },
+    "rewards": {
+      "gold": 65,
+      "xp": 240
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The swarm overran you."
+    }
+  },
+  {
+    "id": "wd-t2-escaped-prisoner",
+    "name": "Escaped Prisoner",
+    "subtitle": "Dungeon Break",
+    "tier": 2,
+    "description": "A dangerous prisoner escaped through the sewers. Recapture him.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "agility": 12,
+      "wisdom": 10,
+      "strength": 13
+    },
+    "rewards": {
+      "gold": 85,
+      "xp": 170
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "The prisoner vanished."
+    },
+    "hiddenSkill": "Survival"
+  },
+  {
+    "id": "wd-t2-the-haunted-mirror",
+    "name": "The Haunted Mirror",
+    "subtitle": "Estate Auction",
+    "tier": 2,
+    "description": "A mirror at an estate sale shows the wrong reflections. Neutralize it.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "intelligence": 11,
+      "wisdom": 11,
+      "charisma": 10
+    },
+    "rewards": {
+      "gold": 60,
+      "xp": 170
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The mirror cracked and cursed you."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t2-bridge-toll-bullies",
+    "name": "Bridge Toll Bullies",
+    "subtitle": "Trade Way Thugs",
+    "tier": 2,
+    "description": "Thugs charge outrageous tolls at a bridge. Discourage them.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "strength": 12,
+      "charisma": 11,
+      "constitution": 14
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 240
+    },
+    "failure": {
+      "injuryHours": 8,
+      "note": "The thugs doubled their price."
+    }
+  },
+  {
+    "id": "wd-t2-the-lost-heir-s-ring",
+    "name": "The Lost Heir's Ring",
+    "subtitle": "Noble Quest",
+    "tier": 2,
+    "description": "A ring of a noble house was lost years ago. Retrace its steps.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "intelligence": 10,
+      "wisdom": 14,
+      "charisma": 11
+    },
+    "rewards": {
+      "gold": 80,
+      "xp": 240
+    },
+    "failure": {
+      "injuryHours": 9,
+      "note": "The ring was a fake."
+    }
+  },
+  {
+    "id": "wd-t2-wolf-pack-in-the-fields",
+    "name": "Wolf Pack in the Fields",
+    "subtitle": "North Road Hunt",
+    "tier": 2,
+    "description": "A pack of wolves is stalking livestock beyond the walls.",
+    "slots": 2,
+    "durationHours": 6,
+    "requirements": {
+      "strength": 12,
+      "agility": 11,
+      "wisdom": 12
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 210
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The wolves circled back."
+    },
+    "hiddenSkill": "Animal Handling"
+  },
+  {
+    "id": "wd-t2-mad-cultists-rites",
+    "name": "Mad Cultists' Rites",
+    "subtitle": "Back Alley Ritual",
+    "tier": 2,
+    "description": "A handful of cultists chant in a cellar. Break up the ritual.",
+    "slots": 2,
+    "durationHours": 8,
+    "requirements": {
+      "strength": 12,
+      "wisdom": 14,
+      "intelligence": 13
+    },
+    "rewards": {
+      "gold": 60,
+      "xp": 190
+    },
+    "failure": {
+      "injuryHours": 10,
+      "note": "The ritual finished."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t2-sinking-shop",
+    "name": "Sinking Shop",
+    "subtitle": "Dock Ward Disaster",
+    "tier": 2,
+    "description": "A shop is sinking into the mud. Save the stock and the owner.",
+    "slots": 2,
+    "durationHours": 9,
+    "requirements": {
+      "strength": 14,
+      "constitution": 14,
+      "agility": 13
+    },
+    "rewards": {
+      "gold": 90,
+      "xp": 160
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The shop collapsed."
+    },
+    "hiddenSkill": "Athletics"
+  },
+  {
+    "id": "wd-t2-the-dancing-armor",
+    "name": "The Dancing Armor",
+    "subtitle": "Hall of Heroes",
+    "tier": 2,
+    "description": "Armor in a nobleman's hall has begun to dance at night. Quiet it before the guests arrive.",
+    "slots": 2,
+    "durationHours": 7,
+    "requirements": {
+      "strength": 14,
+      "agility": 14,
+      "intelligence": 10
+    },
+    "rewards": {
+      "gold": 85,
+      "xp": 190
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The armor chased you out."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t3-first-level-of-undermountain",
+    "name": "First Level of Undermountain",
+    "subtitle": "Down the Yawning Portal",
+    "tier": 3,
+    "description": "Descend beneath the Yawning Portal and map the first level of the dungeon.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "agility": 23,
+      "constitution": 20,
+      "wisdom": 17
+    },
+    "rewards": {
+      "gold": 200,
+      "xp": 675
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "Traps took their toll."
+    },
+    "hiddenSkill": "Perception"
+  },
+  {
+    "id": "wd-t3-skullport-informant",
+    "name": "Skullport Informant",
+    "subtitle": "Smoke and Lantern Light",
+    "tier": 3,
+    "description": "An informant in Skullport knows of a smuggling ring. Reach him alive.",
+    "slots": 3,
+    "durationHours": 11,
+    "requirements": {
+      "charisma": 22,
+      "agility": 19
+    },
+    "rewards": {
+      "gold": 300,
+      "xp": 650
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "The informant was found dead."
+    }
+  },
+  {
+    "id": "wd-t3-the-apprentice-s-spellbook",
+    "name": "The Apprentice's Spellbook",
+    "subtitle": "A Rogue Tome",
+    "tier": 3,
+    "description": "A runaway apprentice stole a dangerous spellbook. Retrieve it before he casts from it.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "intelligence": 21,
+      "wisdom": 19
+    },
+    "rewards": {
+      "gold": 290,
+      "xp": 500
+    },
+    "failure": {
+      "injuryHours": 20,
+      "note": "The spellbook bit back."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t3-orc-raid-on-the-farms",
+    "name": "Orc Raid on the Farms",
+    "subtitle": "Burning Fields",
+    "tier": 3,
+    "description": "Orcs are raiding farms outside the Field Ward. Stop them before they reach town.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "strength": 23,
+      "constitution": 19,
+      "agility": 19
+    },
+    "rewards": {
+      "gold": 270,
+      "xp": 700
+    },
+    "failure": {
+      "injuryHours": 19,
+      "note": "The raiders burned the fields."
+    }
+  },
+  {
+    "id": "wd-t3-altar-of-the-dragon-cult",
+    "name": "Altar of the Dragon Cult",
+    "subtitle": "A Hidden Shrine",
+    "tier": 3,
+    "description": "A dragon cult shrine lies in an old mine. Smash it and recover its relic.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "strength": 21,
+      "wisdom": 20,
+      "constitution": 19
+    },
+    "rewards": {
+      "gold": 300,
+      "xp": 500
+    },
+    "failure": {
+      "injuryHours": 20,
+      "note": "The relic cursed the party."
+    }
+  },
+  {
+    "id": "wd-t3-the-lich-of-the-sump",
+    "name": "The Lich of the Sump",
+    "subtitle": "Stories from the Sewers",
+    "tier": 3,
+    "description": "A legend says a lich's phylactery lies beneath the sewers. Learn the truth.",
+    "slots": 3,
+    "durationHours": 11,
+    "requirements": {
+      "intelligence": 21,
+      "wisdom": 21
+    },
+    "rewards": {
+      "gold": 200,
+      "xp": 400
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "The legend proved true, and angry."
+    },
+    "hiddenSkill": "History"
+  },
+  {
+    "id": "wd-t3-an-eye-in-the-dark",
+    "name": "An Eye in the Dark",
+    "subtitle": "Beholder Rumors",
+    "tier": 3,
+    "description": "A beholder's lieutenant was seen near the docks. Gather proof without engaging.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "agility": 23,
+      "intelligence": 21
+    },
+    "rewards": {
+      "gold": 230,
+      "xp": 475
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "The eye spotted you."
+    }
+  },
+  {
+    "id": "wd-t3-rescue-the-caravan",
+    "name": "Rescue the Caravan",
+    "subtitle": "Lost on the Sword Coast",
+    "tier": 3,
+    "description": "A merchant caravan is overdue. Search the road and rescue any survivors.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "wisdom": 23,
+      "constitution": 20
+    },
+    "rewards": {
+      "gold": 240,
+      "xp": 650
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The survivors had fled elsewhere."
+    },
+    "hiddenSkill": "Survival"
+  },
+  {
+    "id": "wd-t3-the-witch-of-the-brambles",
+    "name": "The Witch of the Brambles",
+    "subtitle": "A Bargain in the Misty Forest",
+    "tier": 3,
+    "description": "A witch has taken a village's lambs. Negotiate, or fight your way through.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "charisma": 22,
+      "wisdom": 19
+    },
+    "rewards": {
+      "gold": 260,
+      "xp": 675
+    },
+    "failure": {
+      "injuryHours": 14,
+      "note": "The witch laughed and cursed you."
+    }
+  },
+  {
+    "id": "wd-t3-troll-hunt",
+    "name": "Troll Hunt",
+    "subtitle": "Regeneration Trouble",
+    "tier": 3,
+    "description": "A pack of trolls hunts near the road. Use fire to finish what steel starts.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "strength": 22,
+      "constitution": 21,
+      "agility": 17
+    },
+    "rewards": {
+      "gold": 280,
+      "xp": 425
+    },
+    "failure": {
+      "injuryHours": 16,
+      "note": "The trolls regrew and chased you."
+    }
+  },
+  {
+    "id": "wd-t3-the-masked-ball",
+    "name": "The Masked Ball",
+    "subtitle": "Daggers Under Silk",
+    "tier": 3,
+    "description": "An assassin is rumored to attend a masked ball. Spot him before the toast.",
+    "slots": 3,
+    "durationHours": 11,
+    "requirements": {
+      "charisma": 23,
+      "wisdom": 19
+    },
+    "rewards": {
+      "gold": 300,
+      "xp": 525
+    },
+    "failure": {
+      "injuryHours": 14,
+      "note": "The assassin found the toast first."
+    },
+    "hiddenSkill": "Deception"
+  },
+  {
+    "id": "wd-t3-defiled-shrine",
+    "name": "Defiled Shrine",
+    "subtitle": "Haunting in the North",
+    "tier": 3,
+    "description": "A roadside shrine is defiled and haunting travellers. Cleanse it.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "wisdom": 23,
+      "constitution": 20
+    },
+    "rewards": {
+      "gold": 220,
+      "xp": 425
+    },
+    "failure": {
+      "injuryHours": 14,
+      "note": "The spirits turned on you."
+    }
+  },
+  {
+    "id": "wd-t3-gargoyles-of-the-rooftops",
+    "name": "Gargoyles of the Rooftops",
+    "subtitle": "Stone Menace in the Night",
+    "tier": 3,
+    "description": "Gargoyles stalk the rooftops of the Castle Ward. End their attacks.",
+    "slots": 3,
+    "durationHours": 11,
+    "requirements": {
+      "strength": 21,
+      "agility": 21
+    },
+    "rewards": {
+      "gold": 210,
+      "xp": 575
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "The gargoyles hid among the statues."
+    },
+    "hiddenSkill": "Acrobatics"
+  },
+  {
+    "id": "wd-t3-the-crime-lord-s-courier",
+    "name": "The Crime Lord's Courier",
+    "subtitle": "Intercept the Message",
+    "tier": 3,
+    "description": "A crime lord's courier carries a dangerous message. Take it without being seen.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "agility": 22,
+      "charisma": 19
+    },
+    "rewards": {
+      "gold": 300,
+      "xp": 675
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The message was a decoy."
+    }
+  },
+  {
+    "id": "wd-t3-the-restless-tomb",
+    "name": "The Restless Tomb",
+    "subtitle": "Stirrings in the City of the Dead",
+    "tier": 3,
+    "description": "A sealed tomb rattles at night. Reseal it for good.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "constitution": 22,
+      "strength": 20,
+      "wisdom": 18
+    },
+    "rewards": {
+      "gold": 300,
+      "xp": 500
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The dead walked out."
+    }
+  },
+  {
+    "id": "wd-t3-harpy-song",
+    "name": "Harpy Song",
+    "subtitle": "Luring Sailors to the Rocks",
+    "tier": 3,
+    "description": "Harpies lure ships onto the rocks near the harbor. Silence their song.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "constitution": 24,
+      "wisdom": 19
+    },
+    "rewards": {
+      "gold": 280,
+      "xp": 675
+    },
+    "failure": {
+      "injuryHours": 17,
+      "note": "The song lured you to the rocks."
+    },
+    "hiddenSkill": "Insight"
+  },
+  {
+    "id": "wd-t3-the-alchemist-s-fire",
+    "name": "The Alchemist's Fire",
+    "subtitle": "A Burning Laboratory",
+    "tier": 3,
+    "description": "A lab is ablaze with strange green fire. Save the alchemist and his notes.",
+    "slots": 3,
+    "durationHours": 11,
+    "requirements": {
+      "constitution": 22,
+      "intelligence": 19
+    },
+    "rewards": {
+      "gold": 210,
+      "xp": 650
+    },
+    "failure": {
+      "injuryHours": 17,
+      "note": "The notes burned."
+    }
+  },
+  {
+    "id": "wd-t3-ogre-mercenaries",
+    "name": "Ogre Mercenaries",
+    "subtitle": "A Contract Dispute",
+    "tier": 3,
+    "description": "Ogre mercenaries refuse to leave an inn after their contract ended. Convince them.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "strength": 21,
+      "charisma": 20
+    },
+    "rewards": {
+      "gold": 220,
+      "xp": 625
+    },
+    "failure": {
+      "injuryHours": 20,
+      "note": "They demanded far more coin."
+    },
+    "hiddenSkill": "Intimidation"
+  },
+  {
+    "id": "wd-t3-the-ghost-ship",
+    "name": "The Ghost Ship",
+    "subtitle": "Fog Over the Harbor",
+    "tier": 3,
+    "description": "A ghost ship drifts into the harbor at dusk. Board it and learn what it wants.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "wisdom": 22,
+      "charisma": 20
+    },
+    "rewards": {
+      "gold": 200,
+      "xp": 550
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The ship vanished with you aboard."
+    }
+  },
+  {
+    "id": "wd-t3-lizardfolk-truce",
+    "name": "Lizardfolk Truce",
+    "subtitle": "Marsh Diplomacy",
+    "tier": 3,
+    "description": "Lizardfolk raid fishermen on the marsh. Negotiate a truce and learn why.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "charisma": 23,
+      "wisdom": 20
+    },
+    "rewards": {
+      "gold": 260,
+      "xp": 525
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "Talks collapsed into a fight."
+    }
+  },
+  {
+    "id": "wd-t3-fiend-in-a-fine-suit",
+    "name": "Fiend in a Fine Suit",
+    "subtitle": "Rakshasa Rumors",
+    "tier": 3,
+    "description": "A well-dressed stranger bribes officials across the Castle Ward. Learn what he really is.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "charisma": 21,
+      "intelligence": 19
+    },
+    "rewards": {
+      "gold": 300,
+      "xp": 650
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "He saw through your disguise."
+    },
+    "hiddenSkill": "Insight"
+  },
+  {
+    "id": "wd-t3-the-vault-job",
+    "name": "The Vault Job",
+    "subtitle": "Breaking the Bank",
+    "tier": 3,
+    "description": "A corrupt banker holds a stolen deed. Break into his vault and take it back.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "agility": 20,
+      "intelligence": 18
+    },
+    "rewards": {
+      "gold": 290,
+      "xp": 575
+    },
+    "failure": {
+      "injuryHours": 15,
+      "note": "The vault sealed itself."
+    }
+  },
+  {
+    "id": "wd-t3-wererat-gang",
+    "name": "Wererat Gang",
+    "subtitle": "Silver Needed",
+    "tier": 3,
+    "description": "A wererat gang runs a Southern Ward alley. Root them out before the full moon.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "strength": 24,
+      "agility": 20,
+      "constitution": 17
+    },
+    "rewards": {
+      "gold": 220,
+      "xp": 575
+    },
+    "failure": {
+      "injuryHours": 14,
+      "note": "The gang bit back."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t3-the-floating-tower",
+    "name": "The Floating Tower",
+    "subtitle": "A Wizard's Folly",
+    "tier": 3,
+    "description": "A wizard's tower floats above the north wall. Rescue him from his own experiment.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "intelligence": 21,
+      "wisdom": 20
+    },
+    "rewards": {
+      "gold": 280,
+      "xp": 650
+    },
+    "failure": {
+      "injuryHours": 15,
+      "note": "The tower drifted away."
+    }
+  },
+  {
+    "id": "wd-t3-collapsed-dwarven-mine",
+    "name": "Collapsed Dwarven Mine",
+    "subtitle": "Trapped Beneath the Rock",
+    "tier": 3,
+    "description": "A mine in the mountains collapsed. Dig out the trapped miners.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "strength": 22,
+      "constitution": 19
+    },
+    "rewards": {
+      "gold": 220,
+      "xp": 575
+    },
+    "failure": {
+      "injuryHours": 19,
+      "note": "The rubble claimed another tunnel."
+    }
+  },
+  {
+    "id": "wd-t3-the-drow-envoy",
+    "name": "The Drow Envoy",
+    "subtitle": "Skullport Diplomacy",
+    "tier": 3,
+    "description": "A drow diplomat needs safe passage through the city. Not everyone wants her alive.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "charisma": 19,
+      "wisdom": 19,
+      "agility": 19
+    },
+    "rewards": {
+      "gold": 270,
+      "xp": 400
+    },
+    "failure": {
+      "injuryHours": 13,
+      "note": "The envoy was murdered."
+    }
+  },
+  {
+    "id": "wd-t3-beneath-the-dock-ward",
+    "name": "Beneath the Dock Ward",
+    "subtitle": "Smuggler Tunnels",
+    "tier": 3,
+    "description": "A network of tunnels beneath the docks hides a smuggling ring.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "agility": 17,
+      "constitution": 22,
+      "wisdom": 24
+    },
+    "rewards": {
+      "gold": 210,
+      "xp": 400
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The tunnels collapsed."
+    },
+    "hiddenSkill": "Stealth"
+  },
+  {
+    "id": "wd-t3-the-vampire-s-servant",
+    "name": "The Vampire's Servant",
+    "subtitle": "Night Ward Hunt",
+    "tier": 3,
+    "description": "A vampire's servant has been abducting travelers. Find him.",
+    "slots": 3,
+    "durationHours": 11,
+    "requirements": {
+      "strength": 20,
+      "wisdom": 21,
+      "constitution": 17
+    },
+    "rewards": {
+      "gold": 210,
+      "xp": 500
+    },
+    "failure": {
+      "injuryHours": 19,
+      "note": "The servant escaped at dawn."
+    }
+  },
+  {
+    "id": "wd-t3-burning-warehouse",
+    "name": "Burning Warehouse",
+    "subtitle": "Dock Ward Fire",
+    "tier": 3,
+    "description": "A warehouse is on fire and something screams inside.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "strength": 17,
+      "constitution": 18,
+      "agility": 24
+    },
+    "rewards": {
+      "gold": 250,
+      "xp": 500
+    },
+    "failure": {
+      "injuryHours": 20,
+      "note": "The fire spread to the next block."
+    }
+  },
+  {
+    "id": "wd-t3-knights-of-the-silver-rose",
+    "name": "Knights of the Silver Rose",
+    "subtitle": "Honor Guard",
+    "tier": 3,
+    "description": "A knightly order needs help on an escort mission through dangerous roads.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "strength": 20,
+      "charisma": 21,
+      "wisdom": 24
+    },
+    "rewards": {
+      "gold": 280,
+      "xp": 650
+    },
+    "failure": {
+      "injuryHours": 19,
+      "note": "The knights were ambushed."
+    }
+  },
+  {
+    "id": "wd-t3-the-sunken-chapel",
+    "name": "The Sunken Chapel",
+    "subtitle": "Harbor Dive",
+    "tier": 3,
+    "description": "A chapel sank in the bay with a relic inside. Retrieve it.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "strength": 20,
+      "constitution": 21,
+      "intelligence": 20
+    },
+    "rewards": {
+      "gold": 270,
+      "xp": 600
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "The relic was lost to the deep."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t3-gelatinous-cube",
+    "name": "Gelatinous Cube",
+    "subtitle": "Undermountain Janitor",
+    "tier": 3,
+    "description": "A cube scours a corridor in the dungeon. Drive it back.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "strength": 23,
+      "agility": 24,
+      "constitution": 22
+    },
+    "rewards": {
+      "gold": 210,
+      "xp": 400
+    },
+    "failure": {
+      "injuryHours": 15,
+      "note": "The cube swallowed your pack."
+    }
+  },
+  {
+    "id": "wd-t3-the-doppelganger-merchant",
+    "name": "The Doppelganger Merchant",
+    "subtitle": "Market Mystery",
+    "tier": 3,
+    "description": "A merchant is not what he seems. Unmask the imposter.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "intelligence": 18,
+      "wisdom": 20,
+      "charisma": 21
+    },
+    "rewards": {
+      "gold": 210,
+      "xp": 675
+    },
+    "failure": {
+      "injuryHours": 14,
+      "note": "The doppelganger fled in your shape."
+    }
+  },
+  {
+    "id": "wd-t3-bandit-king-of-the-hills",
+    "name": "Bandit King of the Hills",
+    "subtitle": "Trade Way Raid",
+    "tier": 3,
+    "description": "A bandit king demands tribute from every caravan. End his reign.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "strength": 19,
+      "agility": 21,
+      "charisma": 19
+    },
+    "rewards": {
+      "gold": 270,
+      "xp": 575
+    },
+    "failure": {
+      "injuryHours": 13,
+      "note": "The king escaped with the loot."
+    },
+    "hiddenSkill": "Intimidation"
+  },
+  {
+    "id": "wd-t3-poisonous-perfume",
+    "name": "Poisonous Perfume",
+    "subtitle": "Noble Intrigue",
+    "tier": 3,
+    "description": "A perfume maker sells scents with deadly side effects. Gather proof.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "intelligence": 24,
+      "wisdom": 19,
+      "charisma": 20
+    },
+    "rewards": {
+      "gold": 220,
+      "xp": 625
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "The evidence burned."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t3-the-wyvern-s-nest",
+    "name": "The Wyvern's Nest",
+    "subtitle": "Mountain Climb",
+    "tier": 3,
+    "description": "A wyvern has taken a nest above the high road. Drive it off.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "strength": 23,
+      "agility": 22,
+      "constitution": 23
+    },
+    "rewards": {
+      "gold": 230,
+      "xp": 700
+    },
+    "failure": {
+      "injuryHours": 17,
+      "note": "The wyvern attacked."
+    },
+    "hiddenSkill": "Survival"
+  },
+  {
+    "id": "wd-t3-spectral-hound",
+    "name": "Spectral Hound",
+    "subtitle": "Ghostly Hunt",
+    "tier": 3,
+    "description": "A ghostly hound haunts the cemetery. Lay it to rest.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "wisdom": 22,
+      "charisma": 17,
+      "constitution": 22
+    },
+    "rewards": {
+      "gold": 280,
+      "xp": 450
+    },
+    "failure": {
+      "injuryHours": 19,
+      "note": "The hound dragged one of you away."
+    }
+  },
+  {
+    "id": "wd-t3-the-clockwork-spy",
+    "name": "The Clockwork Spy",
+    "subtitle": "Tower Espionage",
+    "tier": 3,
+    "description": "A mechanical spy is sending secrets to a rival. Capture it intact.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "agility": 23,
+      "intelligence": 22,
+      "wisdom": 21
+    },
+    "rewards": {
+      "gold": 280,
+      "xp": 475
+    },
+    "failure": {
+      "injuryHours": 13,
+      "note": "The spy self-destructed."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t3-thieves-guild-heist",
+    "name": "Thieves' Guild Heist",
+    "subtitle": "Guild Contract",
+    "tier": 3,
+    "description": "A rival guild wants the guild vault emptied for a fee.",
+    "slots": 3,
+    "durationHours": 11,
+    "requirements": {
+      "agility": 18,
+      "constitution": 18,
+      "intelligence": 21
+    },
+    "rewards": {
+      "gold": 240,
+      "xp": 450
+    },
+    "failure": {
+      "injuryHours": 14,
+      "note": "The vault guard raised the alarm."
+    },
+    "hiddenSkill": "Sleight of Hand"
+  },
+  {
+    "id": "wd-t3-basilisk-cavern",
+    "name": "Basilisk Cavern",
+    "subtitle": "Under the Hills",
+    "tier": 3,
+    "description": "A basilisk turned a quarry into a statue garden. End its reign.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "strength": 19,
+      "constitution": 23,
+      "wisdom": 21
+    },
+    "rewards": {
+      "gold": 260,
+      "xp": 625
+    },
+    "failure": {
+      "injuryHours": 20,
+      "note": "You joined the statues."
+    }
+  },
+  {
+    "id": "wd-t3-the-plague-doctor",
+    "name": "The Plague Doctor",
+    "subtitle": "Quarantine Ward",
+    "tier": 3,
+    "description": "A mysterious doctor treats the sick, but the patients vanish.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "intelligence": 24,
+      "wisdom": 22,
+      "constitution": 18
+    },
+    "rewards": {
+      "gold": 240,
+      "xp": 475
+    },
+    "failure": {
+      "injuryHours": 14,
+      "note": "The doctor vanished too."
+    }
+  },
+  {
+    "id": "wd-t3-stirges-in-the-orchards",
+    "name": "Stirges in the Orchards",
+    "subtitle": "Field Ward Swarm",
+    "tier": 3,
+    "description": "A swarm of stirges is draining livestock. Burn out the nest.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "strength": 18,
+      "agility": 21,
+      "constitution": 17
+    },
+    "rewards": {
+      "gold": 300,
+      "xp": 650
+    },
+    "failure": {
+      "injuryHours": 16,
+      "note": "The swarm scattered you."
+    }
+  },
+  {
+    "id": "wd-t3-the-ritual-of-seven-candles",
+    "name": "The Ritual of Seven Candles",
+    "subtitle": "Cult Interruption",
+    "tier": 3,
+    "description": "A cult plans a ritual during the new moon. Interrupt it.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "intelligence": 20,
+      "wisdom": 18,
+      "charisma": 21
+    },
+    "rewards": {
+      "gold": 210,
+      "xp": 575
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The ritual was completed."
+    }
+  },
+  {
+    "id": "wd-t3-marauders-at-sea",
+    "name": "Marauders at Sea",
+    "subtitle": "Pirates of the Bay",
+    "tier": 3,
+    "description": "Pirates are taking ships near the harbor mouth. Board and capture.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "strength": 23,
+      "agility": 21,
+      "constitution": 19
+    },
+    "rewards": {
+      "gold": 200,
+      "xp": 400
+    },
+    "failure": {
+      "injuryHours": 15,
+      "note": "The pirates sank your boat."
+    },
+    "hiddenSkill": "Athletics"
+  },
+  {
+    "id": "wd-t3-the-forged-writ",
+    "name": "The Forged Writ",
+    "subtitle": "Court Case",
+    "tier": 3,
+    "description": "A forged writ could ruin a noble family. Prove it false.",
+    "slots": 3,
+    "durationHours": 10,
+    "requirements": {
+      "intelligence": 19,
+      "wisdom": 21,
+      "charisma": 17
+    },
+    "rewards": {
+      "gold": 220,
+      "xp": 450
+    },
+    "failure": {
+      "injuryHours": 16,
+      "note": "The forgery stood."
+    }
+  },
+  {
+    "id": "wd-t3-ettin-brothers",
+    "name": "Ettin Brothers",
+    "subtitle": "Giant Trouble",
+    "tier": 3,
+    "description": "Two-headed ettins have been demanding food from a farm.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "strength": 20,
+      "constitution": 21,
+      "charisma": 24
+    },
+    "rewards": {
+      "gold": 280,
+      "xp": 525
+    },
+    "failure": {
+      "injuryHours": 14,
+      "note": "The ettin smashed you aside."
+    }
+  },
+  {
+    "id": "wd-t3-crypt-of-the-mad-priest",
+    "name": "Crypt of the Mad Priest",
+    "subtitle": "Grave Delving",
+    "tier": 3,
+    "description": "A priest was buried with a cursed text. Retrieve it.",
+    "slots": 3,
+    "durationHours": 12,
+    "requirements": {
+      "intelligence": 22,
+      "wisdom": 17,
+      "constitution": 21
+    },
+    "rewards": {
+      "gold": 200,
+      "xp": 500
+    },
+    "failure": {
+      "injuryHours": 12,
+      "note": "The text drove one of you mad."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t3-midnight-auction",
+    "name": "Midnight Auction",
+    "subtitle": "Black Market",
+    "tier": 3,
+    "description": "A secret auction sells stolen relics. Infiltrate it.",
+    "slots": 3,
+    "durationHours": 14,
+    "requirements": {
+      "agility": 20,
+      "charisma": 24,
+      "intelligence": 20
+    },
+    "rewards": {
+      "gold": 270,
+      "xp": 425
+    },
+    "failure": {
+      "injuryHours": 18,
+      "note": "You were recognized."
+    }
+  },
+  {
+    "id": "wd-t3-owlbear-rampage",
+    "name": "Owlbear Rampage",
+    "subtitle": "Ward Crisis",
+    "tier": 3,
+    "description": "An owlbear escaped a menagerie and is loose in the city.",
+    "slots": 3,
+    "durationHours": 13,
+    "requirements": {
+      "strength": 23,
+      "agility": 21,
+      "constitution": 20
+    },
+    "rewards": {
+      "gold": 230,
+      "xp": 400
+    },
+    "failure": {
+      "injuryHours": 15,
+      "note": "The owlbear mauled the crowd."
+    }
+  },
+  {
+    "id": "wd-t3-the-bone-collector",
+    "name": "The Bone Collector",
+    "subtitle": "Cemetery Murders",
+    "tier": 3,
+    "description": "A killer is taking bones from fresh graves. Catch him.",
+    "slots": 3,
+    "durationHours": 11,
+    "requirements": {
+      "agility": 23,
+      "intelligence": 22,
+      "wisdom": 17
+    },
+    "rewards": {
+      "gold": 220,
+      "xp": 475
+    },
+    "failure": {
+      "injuryHours": 13,
+      "note": "The killer vanished into the fog."
+    }
+  },
+  {
+    "id": "wd-t4-the-lord-s-advisor",
+    "name": "The Lord's Advisor",
+    "subtitle": "Palace Intrigue",
+    "tier": 4,
+    "description": "A palace advisor plots to undermine a Lord of Waterdeep. Gather proof and expose him.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "charisma": 32,
+      "intelligence": 30,
+      "wisdom": 25
+    },
+    "rewards": {
+      "gold": 725,
+      "xp": 1150
+    },
+    "failure": {
+      "injuryHours": 28,
+      "note": "The advisor discredited you."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t4-the-crime-lord-s-hideout",
+    "name": "The Crime Lord's Hideout",
+    "subtitle": "A Beholder's Lair",
+    "tier": 4,
+    "description": "Raid a crime lord's lair beneath the city and steal his ledgers.",
+    "slots": 4,
+    "durationHours": 18,
+    "requirements": {
+      "agility": 33,
+      "intelligence": 30,
+      "constitution": 26
+    },
+    "rewards": {
+      "gold": 600,
+      "xp": 1200
+    },
+    "failure": {
+      "injuryHours": 26,
+      "note": "The beholder's gaze was devastating."
+    }
+  },
+  {
+    "id": "wd-t4-battle-at-the-north-gate",
+    "name": "Battle at the North Gate",
+    "subtitle": "Orc Horde Approaches",
+    "tier": 4,
+    "description": "An orc horde marches on the north gate. Hold the line until reinforcements arrive.",
+    "slots": 4,
+    "durationHours": 17,
+    "requirements": {
+      "strength": 32,
+      "constitution": 28,
+      "agility": 27
+    },
+    "rewards": {
+      "gold": 725,
+      "xp": 1325
+    },
+    "failure": {
+      "injuryHours": 27,
+      "note": "The line broke under the charge."
+    },
+    "hiddenSkill": "Athletics"
+  },
+  {
+    "id": "wd-t4-the-red-wyrm-of-mount-waterdeep",
+    "name": "The Red Wyrm of Mount Waterdeep",
+    "subtitle": "A Dragon's Lair",
+    "tier": 4,
+    "description": "A young red dragon nests near Mount Waterdeep. Drive it off or slay it.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "strength": 31,
+      "constitution": 30,
+      "wisdom": 28
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1125
+    },
+    "failure": {
+      "injuryHours": 31,
+      "note": "The dragon's breath scorched the party."
+    }
+  },
+  {
+    "id": "wd-t4-the-lich-s-phylactery",
+    "name": "The Lich's Phylactery",
+    "subtitle": "Seal It Forever",
+    "tier": 4,
+    "description": "A lich's phylactery has been discovered. Seal it away before the lich returns.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "intelligence": 34,
+      "wisdom": 30,
+      "constitution": 27
+    },
+    "rewards": {
+      "gold": 725,
+      "xp": 1100
+    },
+    "failure": {
+      "injuryHours": 32,
+      "note": "The lich's minions ambushed you."
+    }
+  },
+  {
+    "id": "wd-t4-the-ghost-fleet",
+    "name": "The Ghost Fleet",
+    "subtitle": "Spectral Armada",
+    "tier": 4,
+    "description": "A spectral fleet haunts the harbor. Put the captain to rest.",
+    "slots": 4,
+    "durationHours": 18,
+    "requirements": {
+      "wisdom": 33,
+      "charisma": 28,
+      "constitution": 27
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1300
+    },
+    "failure": {
+      "injuryHours": 31,
+      "note": "The captain cursed the ship."
+    },
+    "hiddenSkill": "History"
+  },
+  {
+    "id": "wd-t4-beneath-the-citadel",
+    "name": "Beneath the Citadel",
+    "subtitle": "The Forgotten Vault",
+    "tier": 4,
+    "description": "A sealed vault beneath an old citadel awakens. Recover its relic.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "intelligence": 31,
+      "agility": 29,
+      "strength": 27
+    },
+    "rewards": {
+      "gold": 675,
+      "xp": 1100
+    },
+    "failure": {
+      "injuryHours": 36,
+      "note": "The vault's guardians awoke."
+    }
+  },
+  {
+    "id": "wd-t4-vampire-spawn",
+    "name": "Vampire Spawn",
+    "subtitle": "Midnight Feeding",
+    "tier": 4,
+    "description": "Vampire spawn prey on North Ward nobles. Hunt down their master.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "strength": 35,
+      "wisdom": 29,
+      "charisma": 27
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1500
+    },
+    "failure": {
+      "injuryHours": 32,
+      "note": "The master fled as a bat."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t4-the-zhentarim-warlord",
+    "name": "The Zhentarim Warlord",
+    "subtitle": "A Border War",
+    "tier": 4,
+    "description": "A warlord marshals mercenaries outside the city. Cripple his supply train.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "agility": 34,
+      "strength": 32,
+      "intelligence": 24
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1500
+    },
+    "failure": {
+      "injuryHours": 25,
+      "note": "The supply train was a trap."
+    }
+  },
+  {
+    "id": "wd-t4-the-black-network",
+    "name": "The Black Network",
+    "subtitle": "Spies Everywhere",
+    "tier": 4,
+    "description": "A spy ring is selling the city's secrets. Unmask its leader.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "charisma": 35,
+      "intelligence": 32,
+      "agility": 28
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1250
+    },
+    "failure": {
+      "injuryHours": 29,
+      "note": "The leader's trap closed."
+    }
+  },
+  {
+    "id": "wd-t4-the-storm-giant-s-bargain",
+    "name": "The Storm Giant's Bargain",
+    "subtitle": "A Request from the Clouds",
+    "tier": 4,
+    "description": "A storm giant demands a service in return for sparing the harbor. Complete it.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "constitution": 34,
+      "strength": 28,
+      "charisma": 28
+    },
+    "rewards": {
+      "gold": 575,
+      "xp": 1175
+    },
+    "failure": {
+      "injuryHours": 29,
+      "note": "The giant's patience ran out."
+    },
+    "hiddenSkill": "Persuasion"
+  },
+  {
+    "id": "wd-t4-mind-flayer-colony",
+    "name": "Mind Flayer Colony",
+    "subtitle": "Whispers Under Skullport",
+    "tier": 4,
+    "description": "Missing citizens lead to a mind flayer lair. Rescue the survivors.",
+    "slots": 4,
+    "durationHours": 17,
+    "requirements": {
+      "intelligence": 36,
+      "wisdom": 32,
+      "constitution": 24
+    },
+    "rewards": {
+      "gold": 575,
+      "xp": 1300
+    },
+    "failure": {
+      "injuryHours": 32,
+      "note": "Minds were stolen."
+    }
+  },
+  {
+    "id": "wd-t4-shadow-thieves",
+    "name": "Shadow Thieves",
+    "subtitle": "A Heist Gone Wrong",
+    "tier": 4,
+    "description": "A guild heist has gone sour. Retrieve the stolen idol before dawn.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "agility": 31,
+      "charisma": 32,
+      "intelligence": 25
+    },
+    "rewards": {
+      "gold": 525,
+      "xp": 1325
+    },
+    "failure": {
+      "injuryHours": 27,
+      "note": "The idol vanished again."
+    },
+    "hiddenSkill": "Sleight of Hand"
+  },
+  {
+    "id": "wd-t4-demon-in-the-cellar",
+    "name": "Demon in the Cellar",
+    "subtitle": "A Planar Rift",
+    "tier": 4,
+    "description": "A planar rift opened beneath a noble's mansion. Close it before it widens.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "wisdom": 31,
+      "intelligence": 32,
+      "constitution": 25
+    },
+    "rewards": {
+      "gold": 600,
+      "xp": 1500
+    },
+    "failure": {
+      "injuryHours": 27,
+      "note": "The rift widened."
+    }
+  },
+  {
+    "id": "wd-t4-the-iron-golem",
+    "name": "The Iron Golem",
+    "subtitle": "A Construct Gone Rogue",
+    "tier": 4,
+    "description": "A guard golem went berserk in the Trades Ward. Disable it without wrecking the district.",
+    "slots": 4,
+    "durationHours": 17,
+    "requirements": {
+      "strength": 35,
+      "intelligence": 29,
+      "constitution": 27
+    },
+    "rewards": {
+      "gold": 575,
+      "xp": 1000
+    },
+    "failure": {
+      "injuryHours": 32,
+      "note": "The golem rampaged further."
+    }
+  },
+  {
+    "id": "wd-t4-tremors-in-the-north",
+    "name": "Tremors in the North",
+    "subtitle": "The Earth Shakes",
+    "tier": 4,
+    "description": "The ground shakes north of the city. Investigate before panic spreads.",
+    "slots": 4,
+    "durationHours": 19,
+    "requirements": {
+      "wisdom": 32,
+      "constitution": 28,
+      "agility": 25
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1175
+    },
+    "failure": {
+      "injuryHours": 30,
+      "note": "Panic spread through the markets."
+    },
+    "hiddenSkill": "Nature"
+  },
+  {
+    "id": "wd-t4-hag-coven",
+    "name": "Hag Coven",
+    "subtitle": "Three Sisters of the Moors",
+    "tier": 4,
+    "description": "A hag coven offers deals to desperate villagers. Break their grip.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "charisma": 32,
+      "wisdom": 29,
+      "constitution": 25
+    },
+    "rewards": {
+      "gold": 550,
+      "xp": 1425
+    },
+    "failure": {
+      "injuryHours": 31,
+      "note": "The coven's curse struck."
+    }
+  },
+  {
+    "id": "wd-t4-the-assassins-contract",
+    "name": "The Assassins' Contract",
+    "subtitle": "Ink and Blood",
+    "tier": 4,
+    "description": "A guild accepted a contract on a Lord. Find and stop the killer.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "agility": 36,
+      "charisma": 27,
+      "wisdom": 28
+    },
+    "rewards": {
+      "gold": 625,
+      "xp": 1300
+    },
+    "failure": {
+      "injuryHours": 33,
+      "note": "The contract was fulfilled."
+    },
+    "hiddenSkill": "Perception"
+  },
+  {
+    "id": "wd-t4-giants-in-the-hills",
+    "name": "Giants in the Hills",
+    "subtitle": "Boulders at Dawn",
+    "tier": 4,
+    "description": "Hill giants pelt a caravan route with boulders. Stop their ambush.",
+    "slots": 4,
+    "durationHours": 18,
+    "requirements": {
+      "strength": 35,
+      "constitution": 29,
+      "agility": 28
+    },
+    "rewards": {
+      "gold": 650,
+      "xp": 1050
+    },
+    "failure": {
+      "injuryHours": 27,
+      "note": "Boulders crushed the escort."
+    }
+  },
+  {
+    "id": "wd-t4-sunken-treasure",
+    "name": "Sunken Treasure",
+    "subtitle": "The Wreck Beneath the Bay",
+    "tier": 4,
+    "description": "A treasure wreck lies beneath the harbor, guarded by sahuagin. Salvage it.",
+    "slots": 4,
+    "durationHours": 17,
+    "requirements": {
+      "strength": 33,
+      "constitution": 28,
+      "agility": 25
+    },
+    "rewards": {
+      "gold": 550,
+      "xp": 1000
+    },
+    "failure": {
+      "injuryHours": 36,
+      "note": "The sahuagin took the prize."
+    }
+  },
+  {
+    "id": "wd-t4-yuan-ti-infiltrators",
+    "name": "Yuan-ti Infiltrators",
+    "subtitle": "Scales Under Silk",
+    "tier": 4,
+    "description": "Yuan-ti infiltrators pose as nobles. Expose them at the Lord's gala.",
+    "slots": 4,
+    "durationHours": 22,
+    "requirements": {
+      "charisma": 31,
+      "intelligence": 30,
+      "wisdom": 26
+    },
+    "rewards": {
+      "gold": 575,
+      "xp": 1200
+    },
+    "failure": {
+      "injuryHours": 30,
+      "note": "They slipped away in the crowd."
+    },
+    "hiddenSkill": "Insight"
+  },
+  {
+    "id": "wd-t4-cult-of-the-elder-eye",
+    "name": "Cult of the Elder Eye",
+    "subtitle": "A Whisper from Beyond",
+    "tier": 4,
+    "description": "A cult tries to summon something from beyond the stars. Interrupt the ritual.",
+    "slots": 4,
+    "durationHours": 18,
+    "requirements": {
+      "wisdom": 31,
+      "intelligence": 32,
+      "constitution": 25
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1475
+    },
+    "failure": {
+      "injuryHours": 31,
+      "note": "The ritual completed."
+    }
+  },
+  {
+    "id": "wd-t4-the-forgotten-queen-s-tomb",
+    "name": "The Forgotten Queen's Tomb",
+    "subtitle": "A Gilded Crypt",
+    "tier": 4,
+    "description": "A queen's tomb lies beneath the cliffs. Retrieve her crown before it wakes her.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "agility": 32,
+      "intelligence": 29,
+      "constitution": 28
+    },
+    "rewards": {
+      "gold": 625,
+      "xp": 1025
+    },
+    "failure": {
+      "injuryHours": 27,
+      "note": "The crown cursed the thief."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t4-fire-giant-foundry",
+    "name": "Fire Giant Foundry",
+    "subtitle": "Forge of Flame",
+    "tier": 4,
+    "description": "Fire giants forge weapons in a volcanic cave. Sabotage their foundry.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "strength": 32,
+      "constitution": 32,
+      "intelligence": 26
+    },
+    "rewards": {
+      "gold": 700,
+      "xp": 1075
+    },
+    "failure": {
+      "injuryHours": 24,
+      "note": "Lava flooded the tunnel."
+    }
+  },
+  {
+    "id": "wd-t4-the-thieves-war",
+    "name": "The Thieves' War",
+    "subtitle": "A Citywide Brawl",
+    "tier": 4,
+    "description": "Two crime lords have started a street war. End it before the city burns.",
+    "slots": 4,
+    "durationHours": 19,
+    "requirements": {
+      "charisma": 31,
+      "strength": 28,
+      "agility": 24
+    },
+    "rewards": {
+      "gold": 650,
+      "xp": 1475
+    },
+    "failure": {
+      "injuryHours": 31,
+      "note": "The war spread to the harbor."
+    }
+  },
+  {
+    "id": "wd-t4-the-beholder-s-lair",
+    "name": "The Beholder's Lair",
+    "subtitle": "Undermountain Peril",
+    "tier": 4,
+    "description": "A beholder holds a hidden level of Undermountain. Defeat it.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "intelligence": 35,
+      "constitution": 28,
+      "wisdom": 30
+    },
+    "rewards": {
+      "gold": 550,
+      "xp": 1300
+    },
+    "failure": {
+      "injuryHours": 25,
+      "note": "The eye rays were devastating."
+    }
+  },
+  {
+    "id": "wd-t4-siege-of-the-castle",
+    "name": "Siege of the Castle",
+    "subtitle": "Defense Mission",
+    "tier": 4,
+    "description": "A noble castle is besieged by an unknown army. Break it.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "strength": 30,
+      "constitution": 32,
+      "charisma": 34
+    },
+    "rewards": {
+      "gold": 600,
+      "xp": 1350
+    },
+    "failure": {
+      "injuryHours": 27,
+      "note": "The gate fell."
+    }
+  },
+  {
+    "id": "wd-t4-the-vampire-lord",
+    "name": "The Vampire Lord",
+    "subtitle": "Cursed Manor",
+    "tier": 4,
+    "description": "A vampire lord has claimed an estate in the North Ward.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "strength": 28,
+      "wisdom": 24,
+      "charisma": 31
+    },
+    "rewards": {
+      "gold": 550,
+      "xp": 1100
+    },
+    "failure": {
+      "injuryHours": 28,
+      "note": "The lord escaped into mist."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t4-dragon-in-the-mines",
+    "name": "Dragon in the Mines",
+    "subtitle": "Mountain Rescue",
+    "tier": 4,
+    "description": "A young dragon has taken a mine and its miners. Rescue the survivors.",
+    "slots": 4,
+    "durationHours": 19,
+    "requirements": {
+      "strength": 24,
+      "constitution": 28,
+      "agility": 29
+    },
+    "rewards": {
+      "gold": 625,
+      "xp": 1450
+    },
+    "failure": {
+      "injuryHours": 32,
+      "note": "The dragon breathed fire."
+    },
+    "hiddenSkill": "Survival"
+  },
+  {
+    "id": "wd-t4-the-mind-flayer-s-thralls",
+    "name": "The Mind Flayer's Thralls",
+    "subtitle": "Underdark Ambush",
+    "tier": 4,
+    "description": "Thralls kidnap citizens for a mind flayer. Find the lair.",
+    "slots": 4,
+    "durationHours": 18,
+    "requirements": {
+      "intelligence": 27,
+      "wisdom": 24,
+      "constitution": 28
+    },
+    "rewards": {
+      "gold": 575,
+      "xp": 1200
+    },
+    "failure": {
+      "injuryHours": 26,
+      "note": "Your minds were scoured."
+    }
+  },
+  {
+    "id": "wd-t4-the-fey-crossing",
+    "name": "The Fey Crossing",
+    "subtitle": "Wild Gate",
+    "tier": 4,
+    "description": "A fey gate opened in the forest and creatures are spilling out.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "wisdom": 29,
+      "charisma": 30,
+      "agility": 25
+    },
+    "rewards": {
+      "gold": 675,
+      "xp": 1350
+    },
+    "failure": {
+      "injuryHours": 32,
+      "note": "The fey stole your names."
+    },
+    "hiddenSkill": "Nature"
+  },
+  {
+    "id": "wd-t4-giant-spider-queen",
+    "name": "Giant Spider Queen",
+    "subtitle": "Webbed Underdark",
+    "tier": 4,
+    "description": "A spider queen rules the tunnels beneath a ward. Cut her webs.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "strength": 27,
+      "agility": 27,
+      "constitution": 32
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1250
+    },
+    "failure": {
+      "injuryHours": 28,
+      "note": "The queen ensnared you."
+    }
+  },
+  {
+    "id": "wd-t4-hunt-for-the-devil-s-contract",
+    "name": "Hunt for the Devil's Contract",
+    "subtitle": "Hellish Legal Trouble",
+    "tier": 4,
+    "description": "A devil holds a contract on a citizen's soul. Win it back.",
+    "slots": 4,
+    "durationHours": 22,
+    "requirements": {
+      "intelligence": 25,
+      "wisdom": 26,
+      "charisma": 30
+    },
+    "rewards": {
+      "gold": 725,
+      "xp": 1000
+    },
+    "failure": {
+      "injuryHours": 30,
+      "note": "The devil kept the soul."
+    }
+  },
+  {
+    "id": "wd-t4-skeletal-legion",
+    "name": "Skeletal Legion",
+    "subtitle": "Necromancer's Army",
+    "tier": 4,
+    "description": "A necromancer is raising a skeletal legion under the graveyard.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "strength": 28,
+      "intelligence": 28,
+      "constitution": 34
+    },
+    "rewards": {
+      "gold": 575,
+      "xp": 1325
+    },
+    "failure": {
+      "injuryHours": 33,
+      "note": "The legion marched on."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t4-the-assassin-s-guild",
+    "name": "The Assassin's Guild",
+    "subtitle": "Murder Contract",
+    "tier": 4,
+    "description": "An assassin guild has put a contract on a Lord. Stop it.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "agility": 36,
+      "intelligence": 26,
+      "charisma": 34
+    },
+    "rewards": {
+      "gold": 725,
+      "xp": 1150
+    },
+    "failure": {
+      "injuryHours": 36,
+      "note": "The Lord was killed."
+    }
+  },
+  {
+    "id": "wd-t4-the-frost-wyrm",
+    "name": "The Frost Wyrm",
+    "subtitle": "Northern Lair",
+    "tier": 4,
+    "description": "A white dragon freezes the northern trade road. Defeat it.",
+    "slots": 4,
+    "durationHours": 18,
+    "requirements": {
+      "strength": 35,
+      "constitution": 31,
+      "wisdom": 26
+    },
+    "rewards": {
+      "gold": 600,
+      "xp": 1200
+    },
+    "failure": {
+      "injuryHours": 33,
+      "note": "You were frozen solid."
+    }
+  },
+  {
+    "id": "wd-t4-city-under-the-lake",
+    "name": "City Under the Lake",
+    "subtitle": "Sunken Ruin",
+    "tier": 4,
+    "description": "Lakeside ruins hide an ancient treasure and its guardians.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "agility": 26,
+      "constitution": 24,
+      "intelligence": 35
+    },
+    "rewards": {
+      "gold": 700,
+      "xp": 1400
+    },
+    "failure": {
+      "injuryHours": 30,
+      "note": "The guardians drowned you."
+    },
+    "hiddenSkill": "History"
+  },
+  {
+    "id": "wd-t4-hag-s-bargain",
+    "name": "Hag's Bargain",
+    "subtitle": "Swamp Deal",
+    "tier": 4,
+    "description": "A hag offers a prize in exchange for something precious. Outwit her.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "wisdom": 35,
+      "charisma": 36,
+      "intelligence": 32
+    },
+    "rewards": {
+      "gold": 550,
+      "xp": 1225
+    },
+    "failure": {
+      "injuryHours": 32,
+      "note": "The hag cursed you all."
+    },
+    "hiddenSkill": "Deception"
+  },
+  {
+    "id": "wd-t4-stone-giants-gift",
+    "name": "Stone Giants' Gift",
+    "subtitle": "Mountain Trade",
+    "tier": 4,
+    "description": "Stone giants offer a treaty. Escort the emissary safely.",
+    "slots": 4,
+    "durationHours": 22,
+    "requirements": {
+      "strength": 32,
+      "constitution": 33,
+      "charisma": 36
+    },
+    "rewards": {
+      "gold": 500,
+      "xp": 1425
+    },
+    "failure": {
+      "injuryHours": 34,
+      "note": "The treaty was refused."
+    }
+  },
+  {
+    "id": "wd-t4-rooftop-chase",
+    "name": "Rooftop Chase",
+    "subtitle": "Night Pursuit",
+    "tier": 4,
+    "description": "A master thief with a stolen relic flees across the rooftops.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "agility": 36,
+      "strength": 35,
+      "constitution": 34
+    },
+    "rewards": {
+      "gold": 750,
+      "xp": 1125
+    },
+    "failure": {
+      "injuryHours": 25,
+      "note": "The thief escaped."
+    }
+  },
+  {
+    "id": "wd-t4-the-ghost-ship-s-captain",
+    "name": "The Ghost Ship's Captain",
+    "subtitle": "Haunted Seas",
+    "tier": 4,
+    "description": "A ghost ship drifts near the harbor with a cursed captain.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "wisdom": 24,
+      "constitution": 26,
+      "charisma": 34
+    },
+    "rewards": {
+      "gold": 625,
+      "xp": 1025
+    },
+    "failure": {
+      "injuryHours": 25,
+      "note": "The ship vanished with a crewmember."
+    }
+  },
+  {
+    "id": "wd-t4-poison-in-the-palace",
+    "name": "Poison in the Palace",
+    "subtitle": "Noble Murder",
+    "tier": 4,
+    "description": "Someone is poisoning the nobles at court. Find the culprit.",
+    "slots": 4,
+    "durationHours": 19,
+    "requirements": {
+      "intelligence": 31,
+      "wisdom": 32,
+      "charisma": 24
+    },
+    "rewards": {
+      "gold": 750,
+      "xp": 1025
+    },
+    "failure": {
+      "injuryHours": 34,
+      "note": "The poisoner struck again."
+    }
+  },
+  {
+    "id": "wd-t4-gnoll-warband",
+    "name": "Gnoll Warband",
+    "subtitle": "Frontier Defense",
+    "tier": 4,
+    "description": "A warband of gnolls attacks the outer farms. Break it.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "strength": 34,
+      "agility": 27,
+      "constitution": 31
+    },
+    "rewards": {
+      "gold": 600,
+      "xp": 1475
+    },
+    "failure": {
+      "injuryHours": 31,
+      "note": "The warband burned the farms."
+    }
+  },
+  {
+    "id": "wd-t4-ruined-tower-of-the-mad-mage",
+    "name": "Ruined Tower of the Mad Mage",
+    "subtitle": "Arcane Ruins",
+    "tier": 4,
+    "description": "A tower hides a mad wizard's vault of spells and traps.",
+    "slots": 4,
+    "durationHours": 22,
+    "requirements": {
+      "intelligence": 25,
+      "agility": 35,
+      "wisdom": 32
+    },
+    "rewards": {
+      "gold": 700,
+      "xp": 1450
+    },
+    "failure": {
+      "injuryHours": 34,
+      "note": "The tower reshaped itself."
+    }
+  },
+  {
+    "id": "wd-t4-stolen-crown-jewels",
+    "name": "Stolen Crown Jewels",
+    "subtitle": "Royal Heist",
+    "tier": 4,
+    "description": "The jewels of Waterdeep are gone. Retrieve them before the festival.",
+    "slots": 4,
+    "durationHours": 20,
+    "requirements": {
+      "agility": 25,
+      "intelligence": 35,
+      "charisma": 35
+    },
+    "rewards": {
+      "gold": 675,
+      "xp": 1150
+    },
+    "failure": {
+      "injuryHours": 36,
+      "note": "The jewels were fenced."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t4-the-basilisk-throne",
+    "name": "The Basilisk Throne",
+    "subtitle": "Petrified Court",
+    "tier": 4,
+    "description": "A noble court has been turned to stone. Find the cause.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "intelligence": 28,
+      "constitution": 27,
+      "wisdom": 35
+    },
+    "rewards": {
+      "gold": 575,
+      "xp": 1250
+    },
+    "failure": {
+      "injuryHours": 35,
+      "note": "You became part of the court."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t4-werebear-pack",
+    "name": "Werebear Pack",
+    "subtitle": "Moonlit Hunt",
+    "tier": 4,
+    "description": "A pack of werebears is hunting in the foothills.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "strength": 31,
+      "constitution": 31,
+      "wisdom": 30
+    },
+    "rewards": {
+      "gold": 525,
+      "xp": 1475
+    },
+    "failure": {
+      "injuryHours": 34,
+      "note": "The pack tore through you."
+    },
+    "hiddenSkill": "Nature"
+  },
+  {
+    "id": "wd-t4-iron-knight",
+    "name": "Iron Knight",
+    "subtitle": "Haunted Armor",
+    "tier": 4,
+    "description": "A suit of armor wanders the old keep and strikes down anyone it meets.",
+    "slots": 4,
+    "durationHours": 18,
+    "requirements": {
+      "strength": 36,
+      "agility": 24,
+      "constitution": 33
+    },
+    "rewards": {
+      "gold": 750,
+      "xp": 1200
+    },
+    "failure": {
+      "injuryHours": 27,
+      "note": "The armor shattered your shield."
+    }
+  },
+  {
+    "id": "wd-t4-the-betrayer-general",
+    "name": "The Betrayer General",
+    "subtitle": "Military Treachery",
+    "tier": 4,
+    "description": "A city general has been feeding secrets to the enemy.",
+    "slots": 4,
+    "durationHours": 16,
+    "requirements": {
+      "intelligence": 33,
+      "wisdom": 26,
+      "charisma": 29
+    },
+    "rewards": {
+      "gold": 600,
+      "xp": 1175
+    },
+    "failure": {
+      "injuryHours": 35,
+      "note": "He escaped to the enemy lines."
+    }
+  },
+  {
+    "id": "wd-t4-hunt-for-the-roc",
+    "name": "Hunt for the Roc",
+    "subtitle": "Skyward Quest",
+    "tier": 4,
+    "description": "A giant roc carries off cattle and the occasional farmer. End the hunt.",
+    "slots": 4,
+    "durationHours": 21,
+    "requirements": {
+      "strength": 28,
+      "agility": 33,
+      "wisdom": 33
+    },
+    "rewards": {
+      "gold": 550,
+      "xp": 1050
+    },
+    "failure": {
+      "injuryHours": 31,
+      "note": "The roc snatched a hero."
+    }
+  },
+  {
+    "id": "wd-t5-the-lord-s-ransom",
+    "name": "The Lord's Ransom",
+    "subtitle": "Kidnapping at the Palace",
+    "tier": 5,
+    "description": "A Lord of Waterdeep has been taken. Rescue them before the city descends into chaos.",
+    "slots": 5,
+    "durationHours": 32,
+    "requirements": {
+      "charisma": 43,
+      "agility": 40,
+      "intelligence": 39
+    },
+    "rewards": {
+      "gold": 2500,
+      "xp": 2600
+    },
+    "failure": {
+      "injuryHours": 70,
+      "note": "The Lord was lost."
+    },
+    "hiddenSkill": "Stealth"
+  },
+  {
+    "id": "wd-t5-dragon-cult-uprising",
+    "name": "Dragon Cult Uprising",
+    "subtitle": "The Wyrmspeakers March",
+    "tier": 5,
+    "description": "The dragon cult launches a coordinated attack. Strike at the head of the cult.",
+    "slots": 5,
+    "durationHours": 28,
+    "requirements": {
+      "strength": 41,
+      "constitution": 43,
+      "wisdom": 38
+    },
+    "rewards": {
+      "gold": 2300,
+      "xp": 2550
+    },
+    "failure": {
+      "injuryHours": 61,
+      "note": "The cult's dragon appeared."
+    }
+  },
+  {
+    "id": "wd-t5-aboleth-beneath-the-bay",
+    "name": "Aboleth Beneath the Bay",
+    "subtitle": "An Ancient Mind",
+    "tier": 5,
+    "description": "An aboleth enslaves harbor workers. Destroy it and free its thralls.",
+    "slots": 5,
+    "durationHours": 33,
+    "requirements": {
+      "intelligence": 49,
+      "wisdom": 39,
+      "constitution": 38
+    },
+    "rewards": {
+      "gold": 1100,
+      "xp": 2800
+    },
+    "failure": {
+      "injuryHours": 71,
+      "note": "Minds bent beneath its will."
+    },
+    "hiddenSkill": "Insight"
+  },
+  {
+    "id": "wd-t5-the-ancient-red-dragon",
+    "name": "The Ancient Red Dragon",
+    "subtitle": "The Mountain Awakens",
+    "tier": 5,
+    "description": "An ancient red dragon wakes beneath Mount Waterdeep. Stop it from razing the city.",
+    "slots": 5,
+    "durationHours": 24,
+    "requirements": {
+      "strength": 49,
+      "constitution": 41,
+      "wisdom": 35
+    },
+    "rewards": {
+      "gold": 1300,
+      "xp": 2150
+    },
+    "failure": {
+      "injuryHours": 63,
+      "note": "The dragon's fire was unmatched."
+    }
+  },
+  {
+    "id": "wd-t5-the-lich-king-s-return",
+    "name": "The Lich King's Return",
+    "subtitle": "A Hunt for the Phylactery",
+    "tier": 5,
+    "description": "A lich returns to claim the city. Destroy his phylactery before the new moon.",
+    "slots": 5,
+    "durationHours": 35,
+    "requirements": {
+      "intelligence": 44,
+      "wisdom": 39,
+      "constitution": 35
+    },
+    "rewards": {
+      "gold": 1600,
+      "xp": 2750
+    },
+    "failure": {
+      "injuryHours": 49,
+      "note": "The lich walked among the dead."
+    }
+  },
+  {
+    "id": "wd-t5-the-demon-prince-s-gambit",
+    "name": "The Demon Prince's Gambit",
+    "subtitle": "A Gate to the Abyss",
+    "tier": 5,
+    "description": "Cultists open a gate to the Abyss beneath the city. Close it at any cost.",
+    "slots": 5,
+    "durationHours": 32,
+    "requirements": {
+      "wisdom": 44,
+      "constitution": 41,
+      "strength": 36
+    },
+    "rewards": {
+      "gold": 1100,
+      "xp": 2700
+    },
+    "failure": {
+      "injuryHours": 48,
+      "note": "The gate opened wider."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t5-siege-of-waterdeep",
+    "name": "Siege of Waterdeep",
+    "subtitle": "Armies at the Walls",
+    "tier": 5,
+    "description": "A coalition besieges the city. Break the siege commander's will.",
+    "slots": 5,
+    "durationHours": 35,
+    "requirements": {
+      "strength": 44,
+      "charisma": 44,
+      "constitution": 39
+    },
+    "rewards": {
+      "gold": 1100,
+      "xp": 2200
+    },
+    "failure": {
+      "injuryHours": 67,
+      "note": "The siege tightened."
+    }
+  },
+  {
+    "id": "wd-t5-the-great-heist",
+    "name": "The Great Heist",
+    "subtitle": "The Crown of the City",
+    "tier": 5,
+    "description": "A heist of the city's crown jewels is underway. Stop it, or steal them first.",
+    "slots": 5,
+    "durationHours": 26,
+    "requirements": {
+      "agility": 43,
+      "charisma": 43,
+      "intelligence": 35
+    },
+    "rewards": {
+      "gold": 2200,
+      "xp": 2450
+    },
+    "failure": {
+      "injuryHours": 49,
+      "note": "The thieves escaped through the sewers."
+    },
+    "hiddenSkill": "Sleight of Hand"
+  },
+  {
+    "id": "wd-t5-the-elder-brain-s-plan",
+    "name": "The Elder Brain's Plan",
+    "subtitle": "Ascension Under Skullport",
+    "tier": 5,
+    "description": "An elder brain plots beneath Skullport. Strike before it ascends.",
+    "slots": 5,
+    "durationHours": 32,
+    "requirements": {
+      "intelligence": 46,
+      "wisdom": 39,
+      "constitution": 37
+    },
+    "rewards": {
+      "gold": 1300,
+      "xp": 3000
+    },
+    "failure": {
+      "injuryHours": 56,
+      "note": "The elder brain's minds struck back."
+    }
+  },
+  {
+    "id": "wd-t5-the-titan-s-hammer",
+    "name": "The Titan's Hammer",
+    "subtitle": "A Weapon Awakened",
+    "tier": 5,
+    "description": "A titan's forgotten hammer awakens in the mountains. Seal it away or claim it.",
+    "slots": 5,
+    "durationHours": 30,
+    "requirements": {
+      "strength": 43,
+      "constitution": 40,
+      "intelligence": 37
+    },
+    "rewards": {
+      "gold": 2000,
+      "xp": 3000
+    },
+    "failure": {
+      "injuryHours": 68,
+      "note": "The hammer shook the mountain."
+    }
+  },
+  {
+    "id": "wd-t5-the-plague-bringer",
+    "name": "The Plague Bringer",
+    "subtitle": "A Sickness in the Streets",
+    "tier": 5,
+    "description": "A plague spreads from the docks. Find its source and cure it.",
+    "slots": 5,
+    "durationHours": 24,
+    "requirements": {
+      "wisdom": 48,
+      "intelligence": 41,
+      "constitution": 36
+    },
+    "rewards": {
+      "gold": 1200,
+      "xp": 2950
+    },
+    "failure": {
+      "injuryHours": 56,
+      "note": "The plague spread."
+    },
+    "hiddenSkill": "Medicine"
+  },
+  {
+    "id": "wd-t5-dragon-turtle-terror",
+    "name": "Dragon Turtle Terror",
+    "subtitle": "A Storm in the Harbor",
+    "tier": 5,
+    "description": "A dragon turtle sinks ships in the harbor. Slay it or drive it off.",
+    "slots": 5,
+    "durationHours": 29,
+    "requirements": {
+      "strength": 45,
+      "constitution": 38,
+      "agility": 34
+    },
+    "rewards": {
+      "gold": 1200,
+      "xp": 2350
+    },
+    "failure": {
+      "injuryHours": 59,
+      "note": "The turtle sank your boat."
+    }
+  },
+  {
+    "id": "wd-t5-the-shadow-throne",
+    "name": "The Shadow Throne",
+    "subtitle": "A Hidden Claimant",
+    "tier": 5,
+    "description": "A hidden claimant plots for a Lord's seat with dark magic. Expose him.",
+    "slots": 5,
+    "durationHours": 32,
+    "requirements": {
+      "charisma": 46,
+      "intelligence": 38,
+      "wisdom": 33
+    },
+    "rewards": {
+      "gold": 1700,
+      "xp": 2100
+    },
+    "failure": {
+      "injuryHours": 53,
+      "note": "The claimant slipped away."
+    },
+    "hiddenSkill": "Investigation"
+  },
+  {
+    "id": "wd-t5-the-death-tyrant",
+    "name": "The Death Tyrant",
+    "subtitle": "The Eye of the Grave",
+    "tier": 5,
+    "description": "A death tyrant has risen in the City of the Dead. Banish it before the city wakes.",
+    "slots": 5,
+    "durationHours": 25,
+    "requirements": {
+      "constitution": 44,
+      "wisdom": 41,
+      "strength": 37
+    },
+    "rewards": {
+      "gold": 1500,
+      "xp": 2050
+    },
+    "failure": {
+      "injuryHours": 49,
+      "note": "Its gaze felled your heroes."
+    }
+  },
+  {
+    "id": "wd-t5-the-phoenix-egg",
+    "name": "The Phoenix Egg",
+    "subtitle": "The Reborn Flame",
+    "tier": 5,
+    "description": "A phoenix egg hatches in the mountains. Escort it to a safe nest.",
+    "slots": 5,
+    "durationHours": 31,
+    "requirements": {
+      "wisdom": 45,
+      "constitution": 41,
+      "agility": 38
+    },
+    "rewards": {
+      "gold": 1000,
+      "xp": 3000
+    },
+    "failure": {
+      "injuryHours": 48,
+      "note": "The egg cracked early."
+    }
+  },
+  {
+    "id": "wd-t5-fey-court-invasion",
+    "name": "Fey Court Invasion",
+    "subtitle": "Summer and Winter",
+    "tier": 5,
+    "description": "Fey lords invade the Misty Forest. Broker a peace or break their army.",
+    "slots": 5,
+    "durationHours": 31,
+    "requirements": {
+      "charisma": 46,
+      "wisdom": 39,
+      "intelligence": 38
+    },
+    "rewards": {
+      "gold": 1000,
+      "xp": 2650
+    },
+    "failure": {
+      "injuryHours": 70,
+      "note": "The courts remained at war."
+    },
+    "hiddenSkill": "Persuasion"
+  },
+  {
+    "id": "wd-t5-treasure-of-the-mad-mage",
+    "name": "Treasure of the Mad Mage",
+    "subtitle": "The Final Level",
+    "tier": 5,
+    "description": "Delve to the deepest level of Undermountain and seize a legendary treasure.",
+    "slots": 5,
+    "durationHours": 28,
+    "requirements": {
+      "strength": 47,
+      "agility": 42,
+      "intelligence": 34
+    },
+    "rewards": {
+      "gold": 2000,
+      "xp": 2700
+    },
+    "failure": {
+      "injuryHours": 52,
+      "note": "The depths swallowed the party."
+    }
+  },
+  {
+    "id": "wd-t5-voices-in-the-water",
+    "name": "Voices in the Water",
+    "subtitle": "The Elder Brain's Bargain",
+    "tier": 5,
+    "description": "An elder brain offers power in exchange for the city. Refuse it with force.",
+    "slots": 5,
+    "durationHours": 32,
+    "requirements": {
+      "intelligence": 45,
+      "wisdom": 41,
+      "charisma": 38
+    },
+    "rewards": {
+      "gold": 2500,
+      "xp": 2250
+    },
+    "failure": {
+      "injuryHours": 60,
+      "note": "The brain's tendrils reached further."
+    },
+    "hiddenSkill": "Insight"
+  },
+  {
+    "id": "wd-t5-elemental-fury",
+    "name": "Elemental Fury",
+    "subtitle": "Siege of the Wards",
+    "tier": 5,
+    "description": "Elemental lords besiege the city's wards. Lead an assault to end it.",
+    "slots": 5,
+    "durationHours": 25,
+    "requirements": {
+      "constitution": 45,
+      "strength": 43,
+      "wisdom": 38
+    },
+    "rewards": {
+      "gold": 1200,
+      "xp": 2250
+    },
+    "failure": {
+      "injuryHours": 61,
+      "note": "The elemental storm raged on."
+    }
+  },
+  {
+    "id": "wd-t5-the-death-knight-s-legion",
+    "name": "The Death Knight's Legion",
+    "subtitle": "An Undead Army Marches",
+    "tier": 5,
+    "description": "A death knight marches an undead army toward the gates. Break his command.",
+    "slots": 5,
+    "durationHours": 24,
+    "requirements": {
+      "strength": 47,
+      "constitution": 40,
+      "charisma": 37
+    },
+    "rewards": {
+      "gold": 2000,
+      "xp": 2850
+    },
+    "failure": {
+      "injuryHours": 48,
+      "note": "The legion pressed on."
+    }
+  },
+  {
+    "id": "wd-t5-the-archmage-s-duel",
+    "name": "The Archmage's Duel",
+    "subtitle": "Challenge Across the Planes",
+    "tier": 5,
+    "description": "A rogue archmage challenges the city's wizards. Meet him in the arcane arena.",
+    "slots": 5,
+    "durationHours": 35,
+    "requirements": {
+      "intelligence": 45,
+      "wisdom": 42,
+      "constitution": 37
+    },
+    "rewards": {
+      "gold": 2500,
+      "xp": 2600
+    },
+    "failure": {
+      "injuryHours": 54,
+      "note": "His spells shattered the arena."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t5-kraken-song",
+    "name": "Kraken Song",
+    "subtitle": "A Cult at Sea",
+    "tier": 5,
+    "description": "A kraken's cult sails from the harbor, summoning storms. Sink their fleet.",
+    "slots": 5,
+    "durationHours": 25,
+    "requirements": {
+      "strength": 44,
+      "constitution": 40,
+      "agility": 34
+    },
+    "rewards": {
+      "gold": 1600,
+      "xp": 2300
+    },
+    "failure": {
+      "injuryHours": 53,
+      "note": "The kraken surfaced."
+    }
+  },
+  {
+    "id": "wd-t5-the-obsidian-gate",
+    "name": "The Obsidian Gate",
+    "subtitle": "A Door Between Worlds",
+    "tier": 5,
+    "description": "A gate of black glass opened in the North Ward. Seal it.",
+    "slots": 5,
+    "durationHours": 36,
+    "requirements": {
+      "intelligence": 44,
+      "wisdom": 43,
+      "constitution": 38
+    },
+    "rewards": {
+      "gold": 1700,
+      "xp": 2950
+    },
+    "failure": {
+      "injuryHours": 55,
+      "note": "The gate pulled someone in."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t5-waterdeep-burns",
+    "name": "Waterdeep Burns",
+    "subtitle": "Saving the City",
+    "tier": 5,
+    "description": "Arcane flame spreads through the wards. Save as many lives as you can.",
+    "slots": 5,
+    "durationHours": 31,
+    "requirements": {
+      "constitution": 48,
+      "strength": 42,
+      "wisdom": 36
+    },
+    "rewards": {
+      "gold": 2200,
+      "xp": 2850
+    },
+    "failure": {
+      "injuryHours": 53,
+      "note": "Whole blocks burned."
+    }
+  },
+  {
+    "id": "wd-t5-the-god-s-trial",
+    "name": "The God's Trial",
+    "subtitle": "Trial of Heroes",
+    "tier": 5,
+    "description": "A god offers a trial at a forgotten temple. Pass it to earn a blessing.",
+    "slots": 5,
+    "durationHours": 27,
+    "requirements": {
+      "charisma": 43,
+      "wisdom": 42,
+      "constitution": 37
+    },
+    "rewards": {
+      "gold": 2100,
+      "xp": 2500
+    },
+    "failure": {
+      "injuryHours": 70,
+      "note": "The god found you wanting."
+    }
+  },
+  {
+    "id": "wd-t5-the-dragon-s-hoard",
+    "name": "The Dragon's Hoard",
+    "subtitle": "Vault of Ancient Wyrm",
+    "tier": 5,
+    "description": "An ancient dragon sleeps on its hoard beneath the mountain. Take what you can.",
+    "slots": 5,
+    "durationHours": 24,
+    "requirements": {
+      "agility": 48,
+      "constitution": 41,
+      "intelligence": 36
+    },
+    "rewards": {
+      "gold": 1600,
+      "xp": 2600
+    },
+    "failure": {
+      "injuryHours": 57,
+      "note": "The wyrm woke."
+    }
+  },
+  {
+    "id": "wd-t5-the-lich-s-phylactery-heist",
+    "name": "The Lich's Phylactery Heist",
+    "subtitle": "Tower of Bones",
+    "tier": 5,
+    "description": "The lich's phylactery sits in a tomb of traps. Steal it.",
+    "slots": 5,
+    "durationHours": 35,
+    "requirements": {
+      "intelligence": 49,
+      "wisdom": 42,
+      "constitution": 47
+    },
+    "rewards": {
+      "gold": 2400,
+      "xp": 2400
+    },
+    "failure": {
+      "injuryHours": 51,
+      "note": "The lich noticed."
+    }
+  },
+  {
+    "id": "wd-t5-avatar-of-death",
+    "name": "Avatar of Death",
+    "subtitle": "Cataclysm",
+    "tier": 5,
+    "description": "A cult calls upon a death avatar. Stop the ritual.",
+    "slots": 5,
+    "durationHours": 32,
+    "requirements": {
+      "strength": 39,
+      "wisdom": 42,
+      "charisma": 35
+    },
+    "rewards": {
+      "gold": 2500,
+      "xp": 2200
+    },
+    "failure": {
+      "injuryHours": 57,
+      "note": "The avatar was summoned."
+    }
+  },
+  {
+    "id": "wd-t5-the-demon-lord-s-seal",
+    "name": "The Demon Lord's Seal",
+    "subtitle": "Abyssal Rift",
+    "tier": 5,
+    "description": "A demon lord is breaking free from his seal. Reinforce it.",
+    "slots": 5,
+    "durationHours": 31,
+    "requirements": {
+      "wisdom": 35,
+      "intelligence": 49,
+      "constitution": 47
+    },
+    "rewards": {
+      "gold": 1800,
+      "xp": 2250
+    },
+    "failure": {
+      "injuryHours": 54,
+      "note": "The seal shattered."
+    },
+    "hiddenSkill": "Religion"
+  },
+  {
+    "id": "wd-t5-storm-of-dragons",
+    "name": "Storm of Dragons",
+    "subtitle": "City Under Fire",
+    "tier": 5,
+    "description": "Dragons attack the city skyline. Defend the ward.",
+    "slots": 5,
+    "durationHours": 27,
+    "requirements": {
+      "strength": 35,
+      "agility": 35,
+      "constitution": 37
+    },
+    "rewards": {
+      "gold": 1800,
+      "xp": 2750
+    },
+    "failure": {
+      "injuryHours": 52,
+      "note": "The ward burned."
+    }
+  },
+  {
+    "id": "wd-t5-fall-of-the-fortress",
+    "name": "Fall of the Fortress",
+    "subtitle": "Siege of the North",
+    "tier": 5,
+    "description": "A great fortress is crumbling under a titan's assault.",
+    "slots": 5,
+    "durationHours": 33,
+    "requirements": {
+      "strength": 49,
+      "constitution": 41,
+      "charisma": 36
+    },
+    "rewards": {
+      "gold": 2100,
+      "xp": 2250
+    },
+    "failure": {
+      "injuryHours": 63,
+      "note": "The fortress fell."
+    },
+    "hiddenSkill": "Athletics"
+  },
+  {
+    "id": "wd-t5-the-archdevil-s-bargain",
+    "name": "The Archdevil's Bargain",
+    "subtitle": "Nine Hells Parley",
+    "tier": 5,
+    "description": "An archdevil offers a bargain no one should accept. Negotiate.",
+    "slots": 5,
+    "durationHours": 31,
+    "requirements": {
+      "charisma": 45,
+      "intelligence": 33,
+      "wisdom": 38
+    },
+    "rewards": {
+      "gold": 1000,
+      "xp": 2900
+    },
+    "failure": {
+      "injuryHours": 69,
+      "note": "Your names were signed away."
+    }
+  },
+  {
+    "id": "wd-t5-vault-of-the-gods",
+    "name": "Vault of the Gods",
+    "subtitle": "Divine Treasure",
+    "tier": 5,
+    "description": "A divine vault holds relics of forgotten gods. Open it.",
+    "slots": 5,
+    "durationHours": 31,
+    "requirements": {
+      "wisdom": 45,
+      "charisma": 42,
+      "intelligence": 37
+    },
+    "rewards": {
+      "gold": 2300,
+      "xp": 2850
+    },
+    "failure": {
+      "injuryHours": 60,
+      "note": "The gods took notice."
+    }
+  },
+  {
+    "id": "wd-t5-beholder-tyrant",
+    "name": "Beholder Tyrant",
+    "subtitle": "Eyes of Terror",
+    "tier": 5,
+    "description": "A beholder tyrant rules an underground empire. End it.",
+    "slots": 5,
+    "durationHours": 29,
+    "requirements": {
+      "intelligence": 36,
+      "wisdom": 43,
+      "constitution": 33
+    },
+    "rewards": {
+      "gold": 2000,
+      "xp": 2750
+    },
+    "failure": {
+      "injuryHours": 60,
+      "note": "The tyrant's gaze annihilated you."
+    }
+  },
+  {
+    "id": "wd-t5-the-deep-kingdom",
+    "name": "The Deep Kingdom",
+    "subtitle": "Underdark War",
+    "tier": 5,
+    "description": "A deep kingdom marches on the surface. Hold the gates.",
+    "slots": 5,
+    "durationHours": 25,
+    "requirements": {
+      "strength": 39,
+      "agility": 33,
+      "constitution": 42
+    },
+    "rewards": {
+      "gold": 1800,
+      "xp": 2400
+    },
+    "failure": {
+      "injuryHours": 50,
+      "note": "The kingdom broke through."
+    }
+  },
+  {
+    "id": "wd-t5-titan-s-wrath",
+    "name": "Titan's Wrath",
+    "subtitle": "Storm Over the Coast",
+    "tier": 5,
+    "description": "A titan's anger floods the coastline. Appease or defeat it.",
+    "slots": 5,
+    "durationHours": 30,
+    "requirements": {
+      "strength": 45,
+      "constitution": 35,
+      "charisma": 44
+    },
+    "rewards": {
+      "gold": 2300,
+      "xp": 2000
+    },
+    "failure": {
+      "injuryHours": 49,
+      "note": "The coast was drowned."
+    }
+  },
+  {
+    "id": "wd-t5-the-sea-king-s-trident",
+    "name": "The Sea King's Trident",
+    "subtitle": "Sunken Throne",
+    "tier": 5,
+    "description": "A sea king's trident lies in an underwater palace guarded by sea monsters.",
+    "slots": 5,
+    "durationHours": 28,
+    "requirements": {
+      "strength": 36,
+      "agility": 34,
+      "constitution": 42
+    },
+    "rewards": {
+      "gold": 1400,
+      "xp": 2050
+    },
+    "failure": {
+      "injuryHours": 56,
+      "note": "The tides swept you away."
+    },
+    "hiddenSkill": "Athletics"
+  },
+  {
+    "id": "wd-t5-reaper-of-the-fey",
+    "name": "Reaper of the Fey",
+    "subtitle": "Wild Hunt",
+    "tier": 5,
+    "description": "The Wild Hunt rides across the countryside. Survive until dawn.",
+    "slots": 5,
+    "durationHours": 30,
+    "requirements": {
+      "agility": 49,
+      "wisdom": 43,
+      "constitution": 39
+    },
+    "rewards": {
+      "gold": 2100,
+      "xp": 2600
+    },
+    "failure": {
+      "injuryHours": 48,
+      "note": "The Hunt took one of you."
+    }
+  },
+  {
+    "id": "wd-t5-kingmaker-s-gambit",
+    "name": "Kingmaker's Gambit",
+    "subtitle": "Throne Conspiracy",
+    "tier": 5,
+    "description": "A conspiracy plans to topple the city's rulers. Expose it.",
+    "slots": 5,
+    "durationHours": 36,
+    "requirements": {
+      "charisma": 45,
+      "intelligence": 39,
+      "wisdom": 35
+    },
+    "rewards": {
+      "gold": 1100,
+      "xp": 2100
+    },
+    "failure": {
+      "injuryHours": 62,
+      "note": "The conspiracy took the throne."
+    }
+  },
+  {
+    "id": "wd-t5-primordial-spring",
+    "name": "Primordial Spring",
+    "subtitle": "Elemental Birth",
+    "tier": 5,
+    "description": "An elemental spring floods the world with chaos. Seal it.",
+    "slots": 5,
+    "durationHours": 33,
+    "requirements": {
+      "intelligence": 37,
+      "constitution": 42,
+      "wisdom": 48
+    },
+    "rewards": {
+      "gold": 1100,
+      "xp": 2650
+    },
+    "failure": {
+      "injuryHours": 52,
+      "note": "The primordial broke loose."
+    },
+    "hiddenSkill": "Nature"
+  },
+  {
+    "id": "wd-t5-the-last-dragon-cult-temple",
+    "name": "The Last Dragon Cult Temple",
+    "subtitle": "Dragon Cult Fortress",
+    "tier": 5,
+    "description": "The last temple of a dragon cult hides a draconic relic. Burn it down.",
+    "slots": 5,
+    "durationHours": 26,
+    "requirements": {
+      "strength": 48,
+      "agility": 46,
+      "charisma": 43
+    },
+    "rewards": {
+      "gold": 1900,
+      "xp": 2400
+    },
+    "failure": {
+      "injuryHours": 56,
+      "note": "The cult's dragon rose."
+    },
+    "hiddenSkill": "Intimidation"
+  },
+  {
+    "id": "wd-t5-plague-of-the-dead",
+    "name": "Plague of the Dead",
+    "subtitle": "City Quarantine",
+    "tier": 5,
+    "description": "A plague of undead sweeps the poor wards. Find patient zero.",
+    "slots": 5,
+    "durationHours": 35,
+    "requirements": {
+      "intelligence": 41,
+      "wisdom": 45,
+      "constitution": 40
+    },
+    "rewards": {
+      "gold": 1900,
+      "xp": 2050
+    },
+    "failure": {
+      "injuryHours": 65,
+      "note": "The plague spread."
+    }
+  },
+  {
+    "id": "wd-t5-the-vault-of-the-mad-king",
+    "name": "The Vault of the Mad King",
+    "subtitle": "Underworld Heist",
+    "tier": 5,
+    "description": "An underworld king's vault holds a forbidden artifact. Rob it.",
+    "slots": 5,
+    "durationHours": 34,
+    "requirements": {
+      "agility": 45,
+      "intelligence": 36,
+      "charisma": 38
+    },
+    "rewards": {
+      "gold": 1500,
+      "xp": 2100
+    },
+    "failure": {
+      "injuryHours": 54,
+      "note": "The king's guards tore you apart."
+    }
+  },
+  {
+    "id": "wd-t5-gate-of-the-giants",
+    "name": "Gate of the Giants",
+    "subtitle": "Giant Invasion",
+    "tier": 5,
+    "description": "Giants march on the gates of the city. Break their lines.",
+    "slots": 5,
+    "durationHours": 32,
+    "requirements": {
+      "strength": 48,
+      "constitution": 40,
+      "wisdom": 47
+    },
+    "rewards": {
+      "gold": 2000,
+      "xp": 3000
+    },
+    "failure": {
+      "injuryHours": 61,
+      "note": "The gate fell."
+    },
+    "hiddenSkill": "Intimidation"
+  },
+  {
+    "id": "wd-t5-crown-of-the-void",
+    "name": "Crown of the Void",
+    "subtitle": "Eldritch Horror",
+    "tier": 5,
+    "description": "A crown from beyond the stars whispers to a lord. Destroy it.",
+    "slots": 5,
+    "durationHours": 26,
+    "requirements": {
+      "wisdom": 39,
+      "intelligence": 40,
+      "charisma": 35
+    },
+    "rewards": {
+      "gold": 1500,
+      "xp": 2850
+    },
+    "failure": {
+      "injuryHours": 65,
+      "note": "The void consumed one of you."
+    },
+    "hiddenSkill": "Arcana"
+  },
+  {
+    "id": "wd-t5-the-great-dragon-race",
+    "name": "The Great Dragon Race",
+    "subtitle": "Sky Challenge",
+    "tier": 5,
+    "description": "Dragons race for glory above the city. Join a rider to win.",
+    "slots": 5,
+    "durationHours": 25,
+    "requirements": {
+      "strength": 43,
+      "agility": 40,
+      "constitution": 44
+    },
+    "rewards": {
+      "gold": 1800,
+      "xp": 2250
+    },
+    "failure": {
+      "injuryHours": 48,
+      "note": "You fell from the sky."
+    },
+    "hiddenSkill": "Acrobatics"
+  },
+  {
+    "id": "wd-t5-stolen-moon",
+    "name": "Stolen Moon",
+    "subtitle": "Celestial Theft",
+    "tier": 5,
+    "description": "A celestial relic called the Moon's Heart was stolen. Retrieve it.",
+    "slots": 5,
+    "durationHours": 35,
+    "requirements": {
+      "agility": 46,
+      "intelligence": 45,
+      "wisdom": 46
+    },
+    "rewards": {
+      "gold": 1600,
+      "xp": 2950
+    },
+    "failure": {
+      "injuryHours": 56,
+      "note": "The relic was destroyed."
+    },
+    "hiddenSkill": "Perception"
+  },
+  {
+    "id": "wd-t5-lair-of-the-kraken",
+    "name": "Lair of the Kraken",
+    "subtitle": "Sea of Swords",
+    "tier": 5,
+    "description": "A kraken guards a hoard of drowned ships. Recover the artifacts.",
+    "slots": 5,
+    "durationHours": 29,
+    "requirements": {
+      "strength": 34,
+      "constitution": 48,
+      "agility": 41
+    },
+    "rewards": {
+      "gold": 2100,
+      "xp": 2600
+    },
+    "failure": {
+      "injuryHours": 69,
+      "note": "The kraken crushed your vessel."
+    }
+  },
+  {
+    "id": "wd-t5-the-eternal-garden",
+    "name": "The Eternal Garden",
+    "subtitle": "Fey Paradise",
+    "tier": 5,
+    "description": "A garden outside time ensnares travelers. Escape with the prize.",
+    "slots": 5,
+    "durationHours": 32,
+    "requirements": {
+      "wisdom": 49,
+      "charisma": 39,
+      "intelligence": 35
+    },
+    "rewards": {
+      "gold": 1800,
+      "xp": 2800
+    },
+    "failure": {
+      "injuryHours": 60,
+      "note": "You lost years inside."
+    }
+  },
+  {
+    "id": "wd-t5-cataclysm-at-the-gates",
+    "name": "Cataclysm at the Gates",
+    "subtitle": "Final Defense",
+    "tier": 5,
+    "description": "A cataclysm approaches the city. Hold the line.",
+    "slots": 5,
+    "durationHours": 30,
+    "requirements": {
+      "strength": 47,
+      "constitution": 46,
+      "charisma": 42
+    },
+    "rewards": {
+      "gold": 1000,
+      "xp": 2950
+    },
+    "failure": {
+      "injuryHours": 49,
+      "note": "The line broke."
+    }
+  }
+]
